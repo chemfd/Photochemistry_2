@@ -11,8 +11,9 @@ link-citations: yes
 github-repo: chemfd/photochemistry_2
 description: "Photochemistry lecture notes for Distance Learning in Chemistry at Bath CH30217"
 ---
-# Index
+# Welcome {-}
 
 The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I have also been able to embed short concept bite videos to further describe some of the topics and you can download the notes (top left of the screen) in a format that suits you to view offline.
 
+## Version history {-}
 The initial commit of this book is dated 6th September 2020.
