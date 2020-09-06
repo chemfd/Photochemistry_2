@@ -1,0 +1,135 @@
+# Photochemistry
+
+### Learning Objectives {#sec:photochemLOs}
+
+
+At the end of this section you should be able to:
+
+
+* XXX needs to be filled in
+
+There are a number of reactions in which light is an essential component, indeed life on earth wouldn’t occur without a photosensitised reaction, nor would we be able to see. This work is little more than an introduction to the fundamental processes, however it should be noted that using light is becoming increasingly important in modern chemistry research. Whether this is for use in sensors, medicine, or energy production the fundamental concepts are largely the same, and these concepts are introduced here.
+
+## Photoinduced Isomerisation
+
+When discussing the absorption of light it was noted that by promotion of an electron into an anti-bonding orbital the bond order was reduced. In the case of double (π) bonds in molecules such as retinal (figure), the bond order of one of the double bonds is reduced and therefore allows rotation around this now single bond, as the energy is lost (either by internal conversion or emission) the π-bond is restored. A simple Lewis model of bonding is convenient, however we have to consider the molecular orbital, and this version of bonding highlights a particular bond which is weakened in the excited state, consequently rotation occurs around a specific bond in a conjugated chain.
+
+```{r echo=FALSE, retinal, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The cis-trans isomerisation of retinal, which when combined with the protein rhodopsin is vital in vision. Absorption of a photon, reduces the bond order of a specific bond due to characteristics of the excited state molecular orbital.'}
+knitr::include_graphics("images/retinal.png")
+```
+
+
+The steady state photochemical yield of any such cis-trans isomerisation will depend upon the absorption of each of the chromophore isomers at the excitation wavelength, the composition of this  steady state is referred to as the photostationary state. The composition of this photostationary state may be easily calculated making only minor assumptions.
+
+The most important of these assumptions is that when in the excited state there is an equal probability that the molecule will relax to the cis & trans states. The second assumption is that (near) monochromatic light is used, because we have already seen that the molar extinction coefficient is very wavelength dependent. Finally the excitation has to occur long enough for the (steady state) photostationary state to be established.
+
+
+Figure \@ref(fig:cistransstilbene) shows the absorption spectra of the two isomers of stilbene, there are a number of interesting photophysical details about this molecule, but it should be noted that the molar extinction coefficient is different for each of the isomers. The point where the two spectra cross is called the isobestic point , for stilbene this is 288 nm, if the system is excited at this wavelength then the yield of each isomer will be the same. However at all other wavelengths the yield of one isomer will be higher than the other. If an excitation wavelength is used whereby the molar extinction coefficient of the trans isomer is highest then this isomer is excited preferentially and there is less of this isomer is the photostationary state.
+
+```{r echo=FALSE, cistransstilbene, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The absorption spectra of trans & cis stilbene in hexane.'}
+knitr::include_graphics("images/cistransstilbene.png")
+```
+
+In summary the higher the molar absorption coefficient at the excitation wavelength the lower the yield of that product in the photostationary state.
+
+The dynamics of cis-trans isomerisation may be studies by using some of the photophysics already discussed. Figure \@ref(fig:cisquench) shows a cis / trans system, in the cis position the emission from a fluorophore is quenched so there is no visible emission from the dye. In the trans position position of the quencher now means that there is either no quenching or the quenching is greatly reduced, consequently the emission from the fluorophore is greatly increased. 
+
+```{r echo=FALSE, cisquench, out.width='20%', fig.show='hold', fig.align='center', fig.cap='The quenching of emission of a fluorophore by a nearby quencher, in the cis configuration the emission from the fluorophore is completely quenched, whereas in the trans configuration emission from the fluorophore is observed.'}
+knitr::include_graphics("images/cisquench.png")
+```
+
+## Photoinduced Rearrangements
+
+Cis / trans isomerisations are not the only type of photochemical reaction; dienes, trienes and polyenes often undergo structural isomerisation, specifically cyclisation reactions. Upon excitation 1,3-butadiene undergoes a ring closing reaction to form cyclobutene. This reaction only occurs from the cis isomer, the trans isomer will instead rearrange as described above.
+
+Reactions of polyenes are highly dependent upon the electronic configuration of the excited state with chemistry from singlet states being very different to chemistry from triplet states. The longer lived triplet states frequently undergo second order dimerisation reactions, whereas the singlet states lead to a internal single molecule cyclisation reactions.
+
+Direct absorption of light may only lead to one of the possible products, for systems with a low triplet yield it is not easy to undergo dimerisation reactions, even if this is the desired products. Instead of direct absorption of light, which frequently only leads to the singlet state, a photosensitiser may be used, use of a sensitiser is common for selective reactions of alkenes or aromatic compounds.
+
+A triplet sensitiser may induce a triplet state in another molecule by energy transfer. A sensitiser molecule maybe excited and relax, via intersystem crossing into an excited triplet state. This sensitiser then undergoes an energy transfer reaction with the ground state alkene molecule. Since the sensitiser was in a triplet state the excited state alkene will also be in a triplet state, and now reaction products of the excited state may will be different from products of the singlet excited state. 
+
+One thing to note for photosensitised reactions is now the photostationary state yield has nothing to do with the absorption coefficient of either of the states. Consequently if a products has to be isometrically pure a sensitiser is often used to ensure high yields of only one of the photoactive isomers.
+
+## Photoinduced Electron Transfer
+
+Redox reactions are an incredibly important class of chemical reaction with the simplest of these being movement of a single electron from an oxidiser (donor) to an acceptor (reduced). In a redox process we are effectively removing an electron from the HOMO of a donor, to an infinite distance (where there are no charge charge interactions, recall definitions of ionisation energy), and then returning that electron from infinity to the LUMO of an acceptor molecule. Redox reactions have traditionally occurred if you get more energy back from the reduction than it takes to oxidise the donor.
+
+However, if we excite an electron from the HOMO into the LUMO then the energy it takes to oxidise the molecule is reduced. Consequently a molecule in its excited state is a better reducing agent than a molecule in its ground state, and redox reactions that cannot occur from the ground state can occur from the excited state, figure \@ref(fig:donoret). This is not the only mechanism by which an excited state can lead to movement of an electron between two molecules. Figure \@ref(fig:acceptoret) shows a hole transfer reaction (movement of a vacancy), where by a chromophore is excited and an electron moves from a second molecule into the hole left behind in the HOMO orbital.
+
+```{r echo=FALSE, donoret, out.width='100%', fig.show='hold', fig.align='center', fig.cap='The one electron redox reaction of a donor molecule, D, and acceptor A. For the ground state the empty LUMO is higher in energy than the donor HOMO and so no reaction occurs. Upon excitation of the dye, D*, the donor electron is now higher in energy than the empty LUMO and so the one electron transfer reaction can occur.'}
+knitr::include_graphics("images/donoret.png")
+```
+
+```{r echo=FALSE, acceptoret, out.width='100%', fig.show='hold', fig.align='center', fig.cap='A hole transfer reaction, where a molecule is excited an the electron transfers from the ground state HOMO orbital of a second molecule into the vacancy in the HOMO orbital of the excited chromophore.'}
+knitr::include_graphics("images/acceptoret.png")
+```
+
+Since the electron moves between the two molecules there has to be an overlap between the molecular orbitals of the donor and acceptor molecules.
+
+The Rehm-Weller equation (equation \@ref(eq:rehmweller)), relates the driving force of a photochemically promoted electron transfer reaction to the redox potentials of the donor (reducing agent Eº(D~•+~/D)) and the acceptor (oxidising agent Eº(A/A~•−~) and the energy gained by promotion of an electron into a LUMO orbital (E~0,0~, quite literally the energy between the ground and excited electronic states for the v=0 bands). There is a small correction factor required, ω(r) but in polar solvents this is negligible, e is the elementary charge on an electron, so in this form this is the driving force for movement of a single electron. This process is normally called photo induced electron transfer.
+
+\begin{equation}
+\Delta G ^\circ = e[E^\circ(D^{\bullet +}/D)-]E^\circ(A-A^{\bullet -})]-E_{0,0} + \omega (r)
+(\#eq:rehmweller)
+\end{equation}
+
+Due to potentially very large driving forces for photo induced redox reactions sometimes reactions behave unexpectedly, this is due to Marcus theory, which relates the driving force of a reaction to the rate. Marcus theory is not discussed here but most reactions which occur in the Marcus inverted region are photochemically induced.
+
+
+XXX Need Marcus
+
+<iframe width="480" height="360" src="https://www.youtube.com/embed/8RMD6Nu9N40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Photosynthesis
+
+Photosynthesis is a photosensitised redox process whereby plants and some micro organisms convert  carbon dioxide to carbohydrates and other organic molecules. The general reaction scheme is:
+
+\begin{equation}
+\textrm{nCO}_2+ \textrm{nH}_2\textrm{O} + h \nu \longrightarrow \textrm{(CH}_2 \textrm{O)}_\textrm{n}+ \textrm{nO}_2
+(\#eq:photosyn)
+\end{equation}
+
+at standard temperatures this reaction is very exergonic (ΔG ~ +500 kJ mol^−1^), and the chemistry involved in the process is very complicated but some key concepts are described here.
+
+Principally it is a 4 electron process, the two half reactions are:
+
+\begin{equation}
+2\textrm{H}_2\textrm{O} \longrightarrow \textrm{O}_2 + 4\textrm{H}^+ + 4\textrm{e}^-
+(\#eq:photosynhalf1)
+\end{equation}
+
+\begin{equation}
+\textrm{CO}_2+ 4\textrm{H}^+ + 4\textrm{e}^- \longrightarrow \textrm{(CH}_2 \textrm{O)}^+ + \textrm{H}_2\textrm{O}
+(\#eq:photosynhalf2)
+\end{equation}
+
+There are a number of different steps in photosynthesis, which can be broken down into two classes of reaction. Light reactions (reactions requiring the input of a photon) involve the production of oxygen and dark reactions (reactions not requiring a photon) use the electrons and protons gained from the light reactions in order to reduce the carbon dioxide.
+
+In order to harvest light for the reactions plants have a number of pigments, which cover a broad range of the visible spectrum. The pigment chlorophyl consists of a porphyrin ring ligated to a magnesium centre. In addition to chlorophyl plants have other conjugated molecules in order to harvest other wavelengths of light. These carotenoids principally absorb blue and green light which then transfers to the reaction centre, however these carotenoids also act as quenching agents in order to ‘hoover up’ any stray oxidising agents (principally singlet oxygen).
+
+Charge separation in photosynthesis is incredibly important process, and is perhaps the most difficult step to replicate in artificial photosynthetic systems. There are also difficulties large structural changes and the large driving force required in order to replicate photosynthesis. Nature uses two reaction centres and harvests light from other antenna modules and currently artificial systems have no where near this complexity, however this is a leading topic of research and a number of different systems, either inspired by or totally removed from nature are currently being developed.
+
+This has been an introduction to photosynthesis, but you should now read pages 222-232 or Wardle.
+
+## Photodynamic Therapy
+
+Current research in photochemistry isn’t solely interested in light harvesting; there is also a large interest in using light in medicine. The most obvious biological use of light is in the essential production of vitamin D, however there are a number of unwanted photoactive reactions that occur, since both DNA and proteins may absorb UV light. 
+
+```{r echo=FALSE, DNAbases, out.width='100%', fig.show='hold', fig.align='center', fig.cap='The base pairs in DNA, the purines guanosine & adenosine hydrogen bond to the pyrimidine bases cytosine and thymidine respectively. Conjugation in the bases means they all have good absorptions of around 6600 M^−1^ cm^−1^ at 260 nm.'}
+knitr::include_graphics("images/DNAbases.png")
+```
+
+DNA undergoes a range of photochemical reactions, depending on the excitation wavelength, with either pyrimidine dimers (figure \@ref(fig:Tdimer)) or one electron oxidation of guanine forming the lesion 8-oxo-guanine being the principle products. Both of these adducts lead to mutations when replicating DNA, although there are a number of repair pathways mutations are inevitable. The pyrimidine dimerisation is particularly efficient as the reactants are already held closely together in the DNA structure.
+
+There has been a great deal of interest in the field of phototheraputics; or using light in a medicinal context. The molecule methylene blue has been used for a number of years a sterilising agent as it is an efficient sensitiser of singlet oxygen, the blue colour is indicative of absorption of red wavelengths of light which makes it useful therapeutically as blood transmits red light. In fact methylene blue has undergone field trials for photosterilisation of blood products in remote areas. The concept being blood products need all DNA removed, wether pathogens or donor white blood cells, methylene blue is indiscriminate in the photosensitised oxidative reactions and any easily oxidisable reactant is damaged.
+
+```{r echo=FALSE, Tdimer, out.width='100%', fig.show='hold', fig.align='center', fig.cap='The structure of a thymidine dimer adduct formed by absorption of UV light.'}
+knitr::include_graphics("images/Tdimer.png")
+```
+
+Using a slightly more targeted approach a number of molecules have been developed for use in photodynamic therapy for treatment of conditions such as cancer. Traditional chemotherapies make use of the higher metabolic rate of cancerous cells and a generally not very specific, which is the reason for the large number of side effects. Photodynamic therapy hopes to use a drug which is completely non toxic in the ‘dark state’ but upon absorption of a photon the molecule becomes highly reactive to either DNA or proteins. Since light can be easily directed only the treated area is generates toxins, however this means that only accessible regions such skin and lungs may be treated. An ideal photodynamic agent will be blue (have a red absorption) so that the light may be transmitted through the skin and blood vessels and will be highly active. Cells have a number of ‘anti oxidant’ repair mechanisms and so damage has to be significant so as to either stop cell replication or cause apoptosis.
+
+## Before Completing this Section
+
+To support the material in this section it is suggested you read chapters 8 & 12 of Wardle ‘Principles and Application of Photochemistry’.
+
