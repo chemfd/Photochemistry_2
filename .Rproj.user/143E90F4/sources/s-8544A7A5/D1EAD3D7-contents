@@ -2,7 +2,15 @@
 
 ### Learning Objectives {#sec:QuenchLOs}
 
-XXX needs filling in
+At the end of this section you should be able to:
+
+- Understand the difference between static and dynamic quenching.
+- Graphically determine quenching constants for static, dynamic and mixed method quenching.
+- Describe mathematically the effect of quenching on emission quantum yields and lifetime.
+- Describe the mechanisms of non-collisional energy transfer.
+- Demonstrate understanding of the factors which affect the rates of non-collisional energy transfer.
+
+
 
 ## Collisional Deactivation of the Excited State {#sec:Collisional}
 
@@ -72,7 +80,7 @@ As with dynamic quenching the change in steady state emission is reflected in th
 
 In some cases a quencher can act as both a static and dynamic quencher; in this case the lifetime is only affected from the dynamic quenching and so the rate constant may easily be determined, from knowing this it is simple to determine the equilibrium constant. Systems where there is a combination of static and dynamic quenching are easy to spot as plots of $I_0 / I$ against the $[Q]$ are curved.
 
-<iframe width="480" height="360" src="https://www.youtube.com/embed/MzS3jKsoDZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: center;"><iframe width="480" height="360" src="https://www.youtube.com/embed/MzS3jKsoDZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## Förster Resonance Energy Transfer {#sec:forster}
 
@@ -195,7 +203,7 @@ Usually the molecular oxygen is excited into the ^^Σ~g~^+^ state, but this rapi
 
 Chemically singlet oxygen formation is very interesting as it is extremely reactive, and has been shown to be an important factor in a number of mechanistic pathways leading to damage of DNA and proteins.
 
-<iframe width="480" height="360" src="https://www.youtube.com/embed/2z6sm2G5GS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: center;"><iframe width="480" height="360" src="https://www.youtube.com/embed/2z6sm2G5GS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## Before Completing this Section
 

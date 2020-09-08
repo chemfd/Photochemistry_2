@@ -7,12 +7,13 @@
 At the end of this section you should be able to:
 
 
-* Understand changes in molecular geometry brought about by light absorption 
-* Give examples of reactions brought about by uv excitation of C=C bonds 
+* Appreciate changes in molecular geometry brought about by light absorption 
 * Use the Beer Lambert Law to calculate light absorption
 * Discuss electronic transitions in terms of Morse energy curves
-* Explain the Franck Condon principle and Franck Condon factors 
-* Define singlet and triplet states in terms of molecular orbitals
+* Explain the Franck Condon principle and Franck Condon factors
+* List selection rules for excitation of a photon and describe factors which affect the molar extinction coefficient
+* Explain some of the factors which affect absorption
+
 
 ## Introduction {#sec:AbsIntro}
 As you have previously learnt energy levels are quantised, in other words atoms and molecules can only have defined amounts of energy. Different transitions (electronic, vibrational, rotational) in atoms and molecules use different characteristic portions of the electromagnetic spectra, Figure \@ref(fig:EMspect). 
@@ -284,7 +285,7 @@ This approach whilst covering the very basics of a transition does not particula
 
 However this idea of an oscillating dipole has some relation to quantum mechanics; because the shape of the molecular orbitals of the HOMO and LUMO are different and there will be a change in the electron distribution and hence a change in dipole of the molecule upon excitation. As such we can define a transition dipole moment for each chromophore - the more similar the ground and excited states the larger the transition dipole moment for the molecule.
 
-A mathematical derivation of the transition dipole moment is beyond the scope of this work^[see Principles of Photochemistry by Turro *et al* if you wish to know more], but it is worth discussing as transition dipoles are hugely important when it come to energy transfer in molecules (see Förster Resonance energy transfer, XXX REF NEEDED TO LATER SECTION XXX).
+A mathematical derivation of the transition dipole moment is beyond the scope of this work^[see Principles of Photochemistry by Turro *et al* if you wish to know more], but it is worth discussing as transition dipoles are hugely important when it come to energy transfer in molecules (see Förster Resonance energy transfer, Section \@ref({sec:forster}).
 
 If we consider light as a wave polarisation is well understood, however there is a quantum mechanical explanation for polarisation as well - in short we can use wave behaviour to consider polarisation and photon behaviour to explain quantisation - just to stick with concepts which should be familiar to us.
 

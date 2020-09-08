@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2020-09-06" />
+<meta name="date" content="2020-09-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -129,12 +129,14 @@
 </ul></li>
 <li class="chapter" data-level="6" data-path="photochemistry.html"><a href="photochemistry.html"><i class="fa fa-check"></i><b>6</b> Photochemistry</a><ul>
 <li class="chapter" data-level="6.0.1" data-path="photochemistry.html"><a href="photochemistry.html#sec:photochemLOs"><i class="fa fa-check"></i><b>6.0.1</b> Learning Objectives</a></li>
-<li class="chapter" data-level="6.1" data-path="photochemistry.html"><a href="photochemistry.html#photoinduced-isomerisation"><i class="fa fa-check"></i><b>6.1</b> Photoinduced Isomerisation</a></li>
-<li class="chapter" data-level="6.2" data-path="photochemistry.html"><a href="photochemistry.html#photoinduced-rearrangements"><i class="fa fa-check"></i><b>6.2</b> Photoinduced Rearrangements</a></li>
-<li class="chapter" data-level="6.3" data-path="photochemistry.html"><a href="photochemistry.html#photoinduced-electron-transfer"><i class="fa fa-check"></i><b>6.3</b> Photoinduced Electron Transfer</a></li>
-<li class="chapter" data-level="6.4" data-path="photochemistry.html"><a href="photochemistry.html#photosynthesis"><i class="fa fa-check"></i><b>6.4</b> Photosynthesis</a></li>
-<li class="chapter" data-level="6.5" data-path="photochemistry.html"><a href="photochemistry.html#photodynamic-therapy"><i class="fa fa-check"></i><b>6.5</b> Photodynamic Therapy</a></li>
-<li class="chapter" data-level="6.6" data-path="ch-Abs.html"><a href="ch-Abs.html#before-completing-this-section"><i class="fa fa-check"></i><b>6.6</b> Before Completing this Section</a></li>
+<li class="chapter" data-level="6.1" data-path="photochemistry.html"><a href="photochemistry.html#sec:photoinducedisom"><i class="fa fa-check"></i><b>6.1</b> Photoinduced Isomerisation</a></li>
+<li class="chapter" data-level="6.2" data-path="photochemistry.html"><a href="photochemistry.html#sec:photoinducedrearrange"><i class="fa fa-check"></i><b>6.2</b> Photoinduced Rearrangements</a></li>
+<li class="chapter" data-level="6.3" data-path="photochemistry.html"><a href="photochemistry.html#sec:photoinducedelec"><i class="fa fa-check"></i><b>6.3</b> Photoinduced Electron Transfer</a></li>
+<li class="chapter" data-level="6.4" data-path="photochemistry.html"><a href="photochemistry.html#sec:marcus"><i class="fa fa-check"></i><b>6.4</b> Marcus Theory of Electron Transfer</a></li>
+<li class="chapter" data-level="6.5" data-path="photochemistry.html"><a href="photochemistry.html#sec:ETinDNA"><i class="fa fa-check"></i><b>6.5</b> Electron transfer reactions in DNA</a></li>
+<li class="chapter" data-level="6.6" data-path="photochemistry.html"><a href="photochemistry.html#sec:photosyn"><i class="fa fa-check"></i><b>6.6</b> Photosynthesis</a></li>
+<li class="chapter" data-level="6.7" data-path="photochemistry.html"><a href="photochemistry.html#sec:PDT"><i class="fa fa-check"></i><b>6.7</b> Photodynamic Therapy</a></li>
+<li class="chapter" data-level="6.8" data-path="ch-Abs.html"><a href="ch-Abs.html#before-completing-this-section"><i class="fa fa-check"></i><b>6.8</b> Before Completing this Section</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -160,7 +162,14 @@
 <h1><span class="header-section-number">Chapter 4</span> Quenching of the Excited State</h1>
 <div id="sec:QuenchLOs" class="section level3">
 <h3><span class="header-section-number">4.0.1</span> Learning Objectives</h3>
-<p>XXX needs filling in</p>
+<p>At the end of this section you should be able to:</p>
+<ul>
+<li>Understand the difference between static and dynamic quenching.</li>
+<li>Graphically determine quenching constants for static, dynamic and mixed method quenching.</li>
+<li>Describe mathematically the effect of quenching on emission quantum yields and lifetime.</li>
+<li>Describe the mechanisms of non-collisional energy transfer.</li>
+<li>Demonstrate understanding of the factors which affect the rates of non-collisional energy transfer.</li>
+</ul>
 </div>
 <div id="sec:Collisional" class="section level2">
 <h2><span class="header-section-number">4.1</span> Collisional Deactivation of the Excited State</h2>
@@ -184,7 +193,6 @@
 </table>
 <p>Quenching of the excited state competes with emission from the excited state, consequently reducing the quantum yield of fluorescence (or phosphorescence).</p>
 <p>This bi-molecular, second order quenching process follows Stern-Volmer kinetics, equation <a href="ch-Quench.html#eq:SternVolmer">(4.1)</a>, a derivation of which can be found in Wardle, p 88-90).</p>
-<p>XXX should I derive stern volmer for myself???</p>
 <p><span class="math display" id="eq:SternVolmer">\[\begin{equation}
 \frac{I_0}{I}=1 + k_q \tau _0 [Q]
 \tag{4.1}
@@ -222,8 +230,10 @@ K_q = \frac{[\textrm{dye:quencher}]}{[\textrm{dye}][\textrm{quencher}]}
 \end{equation}\]</span></p>
 <p>As with dynamic quenching the change in steady state emission is reflected in the change in quantum yield of fluorescence, but this time because the dye exists in either a quenched ( completely non fluorescent) or unquenched (fluorescent) state then the fluorescent lifetime is unchanged in static quenching.</p>
 <p>In some cases a quencher can act as both a static and dynamic quencher; in this case the lifetime is only affected from the dynamic quenching and so the rate constant may easily be determined, from knowing this it is simple to determine the equilibrium constant. Systems where there is a combination of static and dynamic quenching are easy to spot as plots of <span class="math inline">\(I_0 / I\)</span> against the <span class="math inline">\([Q]\)</span> are curved.</p>
+<div style="text-align: center;">
 <iframe width="480" height="360" src="https://www.youtube.com/embed/MzS3jKsoDZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+</div>
 </div>
 <div id="sec:forster" class="section level2">
 <h2><span class="header-section-number">4.3</span> Förster Resonance Energy Transfer</h2>
@@ -293,7 +303,6 @@ E = \frac{R_0^6}{R_0^6+ r^6}
 Figure 4.4:  The mechanism of Dexter energy transfer, where there is a concerted exchange of electrons from the LUMO of the donor to the empty LUMO of the acceptor and at the same time from the HOMO of the acceptor to the HOMO of donor. The two electrons move at the same time leading to a net exchange of energy from the donor to acceptor.
 </p>
 </div>
-<p>XXX redraw image for better contrast</p>
 <p>The rate of Dexter energy transfer is again distance dependent and again is dependent upon the overlap integral, J, between the emission of the donor and the absorption of the acceptor (figure <a href="ch-Quench.html#fig:overlapintegral">4.2</a>, equation <a href="ch-Quench.html#eq:overlap">(4.6)</a>). The rate of Dexter energy transfer is given by:</p>
 <p><span class="math display" id="eq:ratedexter">\[\begin{equation}
 k_{ET}=KJe^{-\frac{2r}{L}}
@@ -331,8 +340,10 @@ Figure 4.6: a) The valence set of molecular orbitals in molecular oxygen, showin
 \end{equation}\]</span></p>
 <p>Usually the molecular oxygen is excited into the ^<sup>Σ<sub>g</sub></sup>+^ state, but this rapidly decays to the <sup>1</sup>Δ<sub>g</sub> state. The <sup>1</sup>Δ<sub>g</sub> is usually simply referred to as singlet oxygen and is relatively stable because of the spin forbidden deactivation, having a lifetime of a few µs in aqueous solvent and hours in the gas phase.</p>
 <p>Chemically singlet oxygen formation is very interesting as it is extremely reactive, and has been shown to be an important factor in a number of mechanistic pathways leading to damage of DNA and proteins.</p>
+<div style="text-align: center;">
 <iframe width="480" height="360" src="https://www.youtube.com/embed/2z6sm2G5GS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+</div>
 </div>
 <div id="before-completing-this-section" class="section level2">
 <h2><span class="header-section-number">4.7</span> Before Completing this Section</h2>

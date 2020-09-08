@@ -5,8 +5,11 @@
 
 At the end of this section you should be able to:
 
+- Explain the origin of excimer and exciplex emission spectra.
+- Describe why excimer and exciplex formation are concentration dependent.
+- Interpret changes in emission spectra with changing concentration to justify formation of either excimers or exciplexes.
 
-XXX to fill in
+
 
 ## Excimers {#sec:excimers}
 
@@ -28,7 +31,7 @@ knitr::include_graphics("images/pyreneexcimer.png")
 
 A concept bite video briefly covering the concepts of eximers and exciplexes (video length 7m05s)
 
-<iframe width="480" height="360" src="https://www.youtube.com/embed/EOURuV9cNOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: center;"><iframe width="480" height="360" src="https://www.youtube.com/embed/EOURuV9cNOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## Exciplexes
 

@@ -5,9 +5,9 @@
 
 At the end of this block you should be able to:
 
-- Explain the mirror symmetry observed in absorption/fluorescence spectra.
+- Define singlet and triplet states in terms of molecular orbitals
 
-- Describe a fluorescence spectrometer.
+- Explain the mirror symmetry observed in absorption/fluorescence spectra.
 
 - Construct and explain the Jablonski diagram.
 
@@ -19,15 +19,9 @@ At the end of this block you should be able to:
 
 - Define and derive the quantum yield of fluorescence and phosphorescence.
 
-- Explain why carbonyl compounds generally don’t fluoresce.
-
 - Discuss the heavy atom effect.
 
--Understand the difference between static and dynamic quenching.
 
-- Explain the origin of  excimer and exciplex fluorescence spectra.
-
-- Discuss energy transfer, excitons and delayed fluorescence.
 
 Only the light absorbed by a molecule can produce photochemical change in a molecule. If a species absorbs radiation then one particle is excited for each quantum of radiation absorbed. This concept of light having to be absorbed before anything else can happen is an obvious one, but is an important concept in itself, it goes on to define the concept of quantum yield of a process, effectively the proportion of excited states which ‘decay’ to any given pathway.
 
@@ -104,7 +98,7 @@ Since the excited state is relatively stable (ns) when compared with the time ta
 
 As a consequence of this stabilising action of the ground and excited states the energy gap of absorption is larger than the energy gap of emission, or the emission of a photon is redshifted from the absorption. This explains the origin of Stokes shift, and explains the offset the Morse curves of the ground and excited states which have previously been used to explain the origin of the Stokes shift.
 
-<iframe width="480" height="360" src="https://www.youtube.com/embed/KOHAMTBKvDA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: center;"><iframe width="480" height="360" src="https://www.youtube.com/embed/KOHAMTBKvDA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## Emission from S~2~ {#sec:azuleneS2}
 
@@ -118,7 +112,7 @@ The molar extinction coefficient is also significantly higher for this S~0~-S~2~
 
 What causes the unusual photophysical example? In short there is a very large energy gap between the S~2~ and S~1~ excited states this has the effect of greatly reducing the rate of internal conversion. There is a very weak emission from the S~1~ to S~0~, in this case the energy gap is relatively small and there is an efficient deactivation of the excited state by internal conversion.
 
-<iframe width="480" height="360" src="https://www.youtube.com/embed/AXqZmv7HfxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: center;"><iframe width="480" height="360" src="https://www.youtube.com/embed/AXqZmv7HfxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## Rates of Photophysical Processes & Quantum Yield {#sec:ratesphoto}
 
@@ -169,7 +163,7 @@ When there are more processes occurring then the singlet lifetime (sometimes cal
 
 If we assume that there is no quenching of the system (this is discussed later) and no chemistry the only decay pathways from the excited state are emission (fluorescence), internal conversion and intersystem crossing to the triplet state, and so consequently only these terms would appear in the equation for the quantum yield. Processes that occur from the triplet state are independent, and therefore none of these terms occur in quantum yield or lifetime equations from the singlet, fluorescent state.
 
-<iframe width="480" height="360" src="https://www.youtube.com/embed/6YXXhcR9yDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: center;"><iframe width="480" height="360" src="https://www.youtube.com/embed/6YXXhcR9yDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 For processes that occur from the triplet state, then obviously, the quantum yield will depend upon the total number of triplet states produced, which is given by the quantum yield of intersystem crossing. So the quantum yield of phosphorescence is given by:
 
@@ -204,7 +198,7 @@ Table: (\#tab:actinometer) The photophysical details of well characterised actin
 
 XXX more detail needed like 1/e
 
-<iframe width="480" height="360" src="https://www.youtube.com/embed/efs_ro_mV2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: center;"><iframe width="480" height="360" src="https://www.youtube.com/embed/efs_ro_mV2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## The Energy Gap Law {#sec:energygap}
 

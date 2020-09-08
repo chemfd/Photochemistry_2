@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2020-09-06" />
+<meta name="date" content="2020-09-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -129,12 +129,14 @@
 </ul></li>
 <li class="chapter" data-level="6" data-path="photochemistry.html"><a href="photochemistry.html"><i class="fa fa-check"></i><b>6</b> Photochemistry</a><ul>
 <li class="chapter" data-level="6.0.1" data-path="photochemistry.html"><a href="photochemistry.html#sec:photochemLOs"><i class="fa fa-check"></i><b>6.0.1</b> Learning Objectives</a></li>
-<li class="chapter" data-level="6.1" data-path="photochemistry.html"><a href="photochemistry.html#photoinduced-isomerisation"><i class="fa fa-check"></i><b>6.1</b> Photoinduced Isomerisation</a></li>
-<li class="chapter" data-level="6.2" data-path="photochemistry.html"><a href="photochemistry.html#photoinduced-rearrangements"><i class="fa fa-check"></i><b>6.2</b> Photoinduced Rearrangements</a></li>
-<li class="chapter" data-level="6.3" data-path="photochemistry.html"><a href="photochemistry.html#photoinduced-electron-transfer"><i class="fa fa-check"></i><b>6.3</b> Photoinduced Electron Transfer</a></li>
-<li class="chapter" data-level="6.4" data-path="photochemistry.html"><a href="photochemistry.html#photosynthesis"><i class="fa fa-check"></i><b>6.4</b> Photosynthesis</a></li>
-<li class="chapter" data-level="6.5" data-path="photochemistry.html"><a href="photochemistry.html#photodynamic-therapy"><i class="fa fa-check"></i><b>6.5</b> Photodynamic Therapy</a></li>
-<li class="chapter" data-level="6.6" data-path="ch-Abs.html"><a href="ch-Abs.html#before-completing-this-section"><i class="fa fa-check"></i><b>6.6</b> Before Completing this Section</a></li>
+<li class="chapter" data-level="6.1" data-path="photochemistry.html"><a href="photochemistry.html#sec:photoinducedisom"><i class="fa fa-check"></i><b>6.1</b> Photoinduced Isomerisation</a></li>
+<li class="chapter" data-level="6.2" data-path="photochemistry.html"><a href="photochemistry.html#sec:photoinducedrearrange"><i class="fa fa-check"></i><b>6.2</b> Photoinduced Rearrangements</a></li>
+<li class="chapter" data-level="6.3" data-path="photochemistry.html"><a href="photochemistry.html#sec:photoinducedelec"><i class="fa fa-check"></i><b>6.3</b> Photoinduced Electron Transfer</a></li>
+<li class="chapter" data-level="6.4" data-path="photochemistry.html"><a href="photochemistry.html#sec:marcus"><i class="fa fa-check"></i><b>6.4</b> Marcus Theory of Electron Transfer</a></li>
+<li class="chapter" data-level="6.5" data-path="photochemistry.html"><a href="photochemistry.html#sec:ETinDNA"><i class="fa fa-check"></i><b>6.5</b> Electron transfer reactions in DNA</a></li>
+<li class="chapter" data-level="6.6" data-path="photochemistry.html"><a href="photochemistry.html#sec:photosyn"><i class="fa fa-check"></i><b>6.6</b> Photosynthesis</a></li>
+<li class="chapter" data-level="6.7" data-path="photochemistry.html"><a href="photochemistry.html#sec:PDT"><i class="fa fa-check"></i><b>6.7</b> Photodynamic Therapy</a></li>
+<li class="chapter" data-level="6.8" data-path="ch-Abs.html"><a href="ch-Abs.html#before-completing-this-section"><i class="fa fa-check"></i><b>6.8</b> Before Completing this Section</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -162,20 +164,14 @@
 <h3><span class="header-section-number">3.0.1</span> Learning Objectives</h3>
 <p>At the end of this block you should be able to:</p>
 <ul>
+<li><p>Define singlet and triplet states in terms of molecular orbitals</p></li>
 <li><p>Explain the mirror symmetry observed in absorption/fluorescence spectra.</p></li>
-<li><p>Describe a fluorescence spectrometer.</p></li>
 <li><p>Construct and explain the Jablonski diagram.</p></li>
 <li><p>Define the rates of the processes in the Jablonski scheme and give typical values for the rate constants.</p></li>
 <li><p>Define singlet and triplet lifetimes and describe how they are measured.</p></li>
 <li><p>Analyse decay curves to obtain lifetimes of excited states.</p></li>
 <li><p>Define and derive the quantum yield of fluorescence and phosphorescence.</p></li>
-<li><p>Explain why carbonyl compounds generally don’t fluoresce.</p></li>
 <li><p>Discuss the heavy atom effect.</p></li>
-</ul>
-<p>-Understand the difference between static and dynamic quenching.</p>
-<ul>
-<li><p>Explain the origin of excimer and exciplex fluorescence spectra.</p></li>
-<li><p>Discuss energy transfer, excitons and delayed fluorescence.</p></li>
 </ul>
 <p>Only the light absorbed by a molecule can produce photochemical change in a molecule. If a species absorbs radiation then one particle is excited for each quantum of radiation absorbed. This concept of light having to be absorbed before anything else can happen is an obvious one, but is an important concept in itself, it goes on to define the concept of quantum yield of a process, effectively the proportion of excited states which ‘decay’ to any given pathway.</p>
 </div>
@@ -245,7 +241,6 @@ Figure 3.1: Jablonski diagram showing: A, the absorption of a photon, and the ph
 </tr>
 </tbody>
 </table>
-<p>XXX need to sort out table alignment!XXX</p>
 <p>The spin selection rule has important consequences on the lifetime of singlet and triplet states. The spin allowed process of fluorescence usually has a short lifetime (less than 10 ns), whereas the spin forbidden process of phosphorescence has a significantly longer lifetime, which can be as long as several seconds.</p>
 <p>Vibrational relaxation occurs in the ps timescale, consequently the excited state decays vibrationally to the S<sub>1</sub>, v’ = 0 state and emission essentially always occurs from the ground vibrational electronically excited state. This is an important concept in photophysics and is called Kasha’s rule.</p>
 <div id="sec:Kasha" class="section level3">
@@ -280,8 +275,10 @@ Figure 3.4: Sketch of the photophysical processes involved in the Stokes shift o
 </div>
 <p>Since the excited state is relatively stable (ns) when compared with the time taken for vibrations and molecular restructuring (ps) the excited state dye molecule and the solvent will reorganise to minimise the energy of the excited state, however in doing so this destabilises the ground state of the molecule. The actual process of emission is again very fast (ps) and so there is no opportunity for the structure of the chromophore or solvation sphere to reorganise. Upon deactivation this state, optimised for the excited state reorganises, lowering the energy of the ground state and destabilising the excited state.</p>
 <p>As a consequence of this stabilising action of the ground and excited states the energy gap of absorption is larger than the energy gap of emission, or the emission of a photon is redshifted from the absorption. This explains the origin of Stokes shift, and explains the offset the Morse curves of the ground and excited states which have previously been used to explain the origin of the Stokes shift.</p>
+<div style="text-align: center;">
 <iframe width="480" height="360" src="https://www.youtube.com/embed/KOHAMTBKvDA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+</div>
 </div>
 <div id="sec:azuleneS2" class="section level2">
 <h2><span class="header-section-number">3.3</span> Emission from S<sub>2</sub></h2>
@@ -294,8 +291,10 @@ Figure 3.5: The absorption (solid line) and emission (dashed line) spectrum of a
 </div>
 <p>The molar extinction coefficient is also significantly higher for this S<sub>0</sub>-S<sub>2</sub> absorption indicating a much greater overlap integral of these two states.</p>
 <p>What causes the unusual photophysical example? In short there is a very large energy gap between the S<sub>2</sub> and S<sub>1</sub> excited states this has the effect of greatly reducing the rate of internal conversion. There is a very weak emission from the S<sub>1</sub> to S<sub>0</sub>, in this case the energy gap is relatively small and there is an efficient deactivation of the excited state by internal conversion.</p>
+<div style="text-align: center;">
 <iframe width="480" height="360" src="https://www.youtube.com/embed/AXqZmv7HfxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+</div>
 </div>
 <div id="sec:ratesphoto" class="section level2">
 <h2><span class="header-section-number">3.4</span> Rates of Photophysical Processes &amp; Quantum Yield</h2>
@@ -371,15 +370,17 @@ Figure 3.5: The absorption (solid line) and emission (dashed line) spectrum of a
 \phi_f = \frac{k_f^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
 \tag{3.3}
 \end{equation}\]</span></p>
-<p>(Examples of expressions for other processes may be found in Section <a href="ch-Em.html#sec:SSQemissionans">3.9</a> equations <a href="ch-Em.html#eq:QYIC">(3.7)</a>, <a href="ch-Em.html#eq:QYST">(3.8)</a> &amp; <a href="ch-Em.html#eq:QYTS">(3.9)</a>.)</p>
+<p>(Examples of expressions for other processes may be found in Section <a href="ch-Em.html#sec:SSQemissionans">3.9</a> equations <a href="ch-Em.html#eq:QYIC">(3.8)</a>, <a href="ch-Em.html#eq:QYST">(3.9)</a> &amp; <a href="ch-Em.html#eq:QYTS">(3.10)</a>.)</p>
 <p>When there are more processes occurring then the singlet lifetime (sometimes called the fluorescence lifetime) will be smaller than the natural fluorescence lifetime, because now the denominator term is bigger (equation <a href="ch-Em.html#eq:lifetimefluor">(3.4)</a>).</p>
 <p><span class="math display" id="eq:lifetimefluor">\[\begin{equation}
 \tau_S = \frac{1}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
 \tag{3.4}
 \end{equation}\]</span></p>
 <p>If we assume that there is no quenching of the system (this is discussed later) and no chemistry the only decay pathways from the excited state are emission (fluorescence), internal conversion and intersystem crossing to the triplet state, and so consequently only these terms would appear in the equation for the quantum yield. Processes that occur from the triplet state are independent, and therefore none of these terms occur in quantum yield or lifetime equations from the singlet, fluorescent state.</p>
+<div style="text-align: center;">
 <iframe width="480" height="360" src="https://www.youtube.com/embed/6YXXhcR9yDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+</div>
 <p>For processes that occur from the triplet state, then obviously, the quantum yield will depend upon the total number of triplet states produced, which is given by the quantum yield of intersystem crossing. So the quantum yield of phosphorescence is given by:</p>
 <p><span class="math display" id="eq:QYphos">\[\begin{equation}
 \phi_p = \frac{k_p^0}{k_p^0+k_{TS}+k_{\textrm{other}}}
@@ -438,9 +439,25 @@ Figure 3.5: The absorption (solid line) and emission (dashed line) spectrum of a
 </div>
 <div id="fluorescence-lifetime" class="section level2">
 <h2><span class="header-section-number">3.5</span> Fluorescence lifetime</h2>
-<p>XXX more detail needed like 1/e</p>
+<p>Spontaneous emission (either fluorescence or phosphorescence) from an excited state is a first order process, and so shows similar kinetics to that which you have already studied, figure <a href="ch-Em.html#fig:fluorlifetime">3.6</a> &amp; equation <a href="ch-Em.html#eq:fluorlifetime">(3.7)</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:fluorlifetime"></span>
+<img src="images/fluorlifetime.png" alt="Emission from an excited state is a first order process, whereby an excited state decays spontaneously. The emission lifetime is the time required for the concentratio of an excited state to fall to 1/e of its initial value." width="50%" />
+<p class="caption">
+Figure 3.6: Emission from an excited state is a first order process, whereby an excited state decays spontaneously. The emission lifetime is the time required for the concentratio of an excited state to fall to 1/e of its initial value.
+</p>
+</div>
+<p>However, instead of using rate constants when talking about this decay (as seen in Section <a href="ch-Em.html#sec:ratesphoto">3.4</a> photochemists tend to talk about emission lifetimes, <span class="math inline">\(\tau\)</span>.</p>
+<p>The fluorescence lifetime is defined as the time required for the concentration of excited state to fall to 1/e (~0.3679) of the initial concentration.</p>
+<p>So for an excited singlet state the fluorescence lifetime is related to the concentrations as follows:</p>
+<p><span class="math display" id="eq:fluorlifetime">\[\begin{equation}
+[S_1]_t=[S_1]_0e^-{\frac{t}{\tau}}
+\tag{3.7}
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(\tau\)</span> is the value given in equation <a href="ch-Em.html#eq:lifetimefluor">(3.4)</a>.</p>
+<div style="text-align: center;">
 <iframe width="480" height="360" src="https://www.youtube.com/embed/efs_ro_mV2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+</div>
 </div>
 <div id="sec:energygap" class="section level2">
 <h2><span class="header-section-number">3.6</span> The Energy Gap Law</h2>
@@ -594,7 +611,7 @@ Figure 3.5: The absorption (solid line) and emission (dashed line) spectrum of a
 </tbody>
 </table>
 <ol start="7" style="list-style-type: decimal">
-<li>5,10-dihydroindeno[2,1-a]indene and trans-stilbene (figure <a href="ch-Em.html#fig:stilbeneindene">3.6</a>) are similar in structure but have very different fluorescent quantum yields of 0.05 and 1.00 respectively, however for trans-stilbene this increases to 0.75 at 77 K. Suggest a reason for the difference in quantum yield of:
+<li>5,10-dihydroindeno[2,1-a]indene and trans-stilbene (figure <a href="ch-Em.html#fig:stilbeneindene">3.7</a>) are similar in structure but have very different fluorescent quantum yields of 0.05 and 1.00 respectively, however for trans-stilbene this increases to 0.75 at 77 K. Suggest a reason for the difference in quantum yield of:
 <ul>
 <li>the two molecules</li>
 <li>the two temperatures</li>
@@ -603,7 +620,7 @@ Figure 3.5: The absorption (solid line) and emission (dashed line) spectrum of a
 <div class="figure" style="text-align: center"><span id="fig:stilbeneindene"></span>
 <img src="images/stilbeneindene.png" alt="5,10-dihydroindeno[2,1-a]indene (left) and trans-stilbene (right)" width="60%" />
 <p class="caption">
-Figure 3.6: 5,10-dihydroindeno[2,1-a]indene (left) and trans-stilbene (right)
+Figure 3.7: 5,10-dihydroindeno[2,1-a]indene (left) and trans-stilbene (right)
 </p>
 </div>
 </div>
@@ -620,18 +637,18 @@ Figure 3.6: 5,10-dihydroindeno[2,1-a]indene (left) and trans-stilbene (right)
 <li><p>Internal conversion
 <span class="math display" id="eq:QYIC">\[\begin{equation}
 \phi_ic = \frac{k_ic}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
-\tag{3.7}
+\tag{3.8}
 \end{equation}\]</span></p></li>
 </ol>
 <p>Intersystem crossing (<span class="math inline">\(S_1\)</span> - <span class="math inline">\(T_1\)</span>)
 <span class="math display" id="eq:QYST">\[\begin{equation}
 \phi_ST = \frac{k_ST}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
-\tag{3.8}
+\tag{3.9}
 \end{equation}\]</span></p>
 <p>Intersystem crossing (<span class="math inline">\(T_1\)</span> - <span class="math inline">\(S_0\)</span>)
 <span class="math display" id="eq:QYTS">\[\begin{equation}
 \phi_TS = \frac{k_TS}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
-\tag{3.9}
+\tag{3.10}
 \end{equation}\]</span></p>
 <ol start="6" style="list-style-type: decimal">
 <li><p>As you work down the halides the amount of spin orbit coupling increases due to the heavy atom effect and the spin selection rules are softened. This leads to a large (nearly x1000) increase in the rate of triplet formation from intersystem crossing. The ratio k<sub>p</sub> / k<sub>ST</sub> changes far less dramatically (0.11, 0.35, 0.32, 0.27, &amp; 0.38 respectively), this has less to do with the heavy atom effect as it increases both the rate of phosphorescence and singlet to triplet intersystem crossing.</p></li>
