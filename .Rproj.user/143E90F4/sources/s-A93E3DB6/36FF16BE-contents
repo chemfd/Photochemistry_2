@@ -18,6 +18,9 @@ The notes have been prepared in a package called BookDown for RStudio so that th
 This is a new format of the document for this year and is easily editable, therefore if you do find any typing errors, areas with lack of clarity, or other errors please let me know. I will update the document accordingly and update the version history below. If there are any major changes I will inform you as a class.
 
 ## Version history {-}
+Updated for pdf but introduced errors with sub and superscripts in figure captions 9th October 2020.
+
 Updated with learning outcomes for each chapter and updated content in chapter 6. 8th September 2020.
+
 The initial commit of this book is dated 6th September 2020.
 
