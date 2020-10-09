@@ -1,2 +1,0 @@
-update.packages(ask=FALSE,checkGBuilt=TRUE)
-tinytex::tlmgr_update()
