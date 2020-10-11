@@ -1,0 +1,26 @@
+--- 
+title: "Photochemistry and Photophysics"
+author: "Fiona Dickinson"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: chemfd/photochemistry_2
+description: "Photochemistry lecture notes for Distance Learning in Chemistry at Bath CH30217"
+---
+# Welcome {-}
+
+The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I have also been able to embed short concept bite videos to further describe some of the topics. Further you can download the notes (top left of the screen) in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading.
+
+This is a new format of the document for this year and is easily editable, therefore if you do find any typing errors, areas with lack of clarity, or other errors please let me know. I will update the document accordingly and update the version history below. If there are any major changes I will inform you as a class.
+
+## Version history {-}
+Updated for pdf but introduced errors with sub and superscripts in figure captions 9th October 2020.
+
+Updated with learning outcomes for each chapter and updated content in chapter 6. 8th September 2020.
+
+The initial commit of this book is dated 6th September 2020.
+
