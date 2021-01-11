@@ -54,7 +54,7 @@ Table: (\#tab:phototrans) The excitation and decay pathways in molecules.
 |*'Allowed transitions'*| | |
 |Singlet-singlet absorption <br> Singlet-singlet emission|<br> fluorescence | $S_0 + h \nu \longrightarrow S_1$ <br> $S_1 \longrightarrow S_0 + h \nu '$|
 |*'Forbidden transitions'*|||
-|Singlet-triplet absorption <br> Triplet-singlet emission|<br> fluorescence | $S_0 + h \nu \longrightarrow T_1$ <br> $T_1 \longrightarrow S_0 + h \nu ''$|
+|Singlet-triplet absorption <br> Triplet-singlet emission|<br> phosphorescence | $S_0 + h \nu \longrightarrow T_1$ <br> $T_1 \longrightarrow S_0 + h \nu ''$|
 |*'Other transitions'* | | |
 |Internal conversion <br> <Intersystem crossing> <br> <Intersystem crossing>  | (vibrational relaxation) <br> <br> (vibrational relaxation) | $S_1 \longrightarrow S_0 + heat$ <br> $S_1 \longrightarrow T_1 + heat$ <br> $T_1 \longrightarrow S_0 + heat$|
 |*Other pathways*| | |
