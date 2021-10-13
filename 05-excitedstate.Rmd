@@ -51,6 +51,7 @@ Exciplexes are common in organic solvent as non polar solvents are not good at s
 
 Please see video above in Section \@ref(sec:excimers) for a review of this topic (timecode 4m52s).
 
+
 ## Before Completing this Section
 To support the material in this section it is suggested you read pages 90-96 of Wardle ‘Principles and Application of Photochemistry’.
 

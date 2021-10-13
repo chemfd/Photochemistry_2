@@ -15,6 +15,9 @@ At the end of this section you should be able to:
 * Explain some of the factors which affect absorption
 
 
+There is a Concept Bite video in Section \@ref(sec:before1) which summarises much of this content.
+
+
 ## Introduction {#sec:AbsIntro}
 As you have previously learnt energy levels are quantised, in other words atoms and molecules can only have defined amounts of energy. Different transitions (electronic, vibrational, rotational) in atoms and molecules use different characteristic portions of the electromagnetic spectra, Figure \@ref(fig:EMspect). 
 
@@ -25,7 +28,7 @@ When you saw atomic absorption and emission spectra the lines were very sharp, o
 knitr::include_graphics("images/HAbsEm.png")
 ```
 
-```{r echo=FALSE, RhoAbsEm, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The absorption (black) and emission (teal) spectra of Rhodamine 6G in ethanol. The emission spectra was recorded with an excitation wavelength of 480 nm and a bandwidth of 4.25 nm. Adapted from OMLC (https://omlc.org/spectra/PhotochemCAD/html/083.html), 2nd July 2014'}
+```{r echo=FALSE, RhoAbsEm, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The absorption (black) and emission (teal) spectra of Rhodamine 6G in ethanol. The emission spectra was recorded with an excitation wavelength of 480 nm and a bandwidth of 4.25 nm [Adapted from [OMLC](https://omlc.org/spectra/PhotochemCAD/html/083.html), [2nd July 2014]]'}
 knitr::include_graphics("images/Rhodamine6GAbsEm.png")
 ```
 
@@ -59,6 +62,7 @@ The Beer-Lambert law also has to make a number of other ‘reasonable’ conside
 - There is no measurable emission from the sample. 
 
 However, this empirical relationship can be examined in a deeper way.
+
 
 ## Einstein Absorption and Emission Factors {#sec:Einstein}
 
@@ -201,9 +205,9 @@ The greater the amount of conjugation in a molecule the smaller the energy gap b
 
 This fits with the theory you learnt in your quantum mechanics lectures, where you can model the linear conjugated model quite accurately using the particle in a one dimensional box model.
 
-Table: (\#tab:lambdaconj)  The dependence of maximum absorption wavelength on the increasing length of conjugation is clearly shown by moving along the diene, diene, polyene series. Inclusion of a hetero atom with lone pairs introduces non-bonding, $n$, electrons into the MO, and a second absorption band $n \longrightarrow \pi^\ast$ introduced with a lower energy transition.
+Table: (\#tab:lambdaconj)  The dependence of maximum absorption wavelength on the increasing length of conjugation is clearly shown by moving along the diene, triene, polyene series. Inclusion of a hetero atom with lone pairs introduces non-bonding, $n$, electrons into the MO, and a second absorption band $n \longrightarrow \pi^\ast$ introduced with a lower energy transition.
 
-|  | $\lambda$~max~ / nm <br>$\pi \longrightarrow \pi^\ast$    |  | $\lambda$~max~ / nm <br> $\pi \longrightarrow \pi^\ast$  <br> $n \longrightarrow \pi^\ast$|
+|  | $\lambda$~max~ / nm <br>$\pi \longrightarrow \pi^\ast$    |  | $\lambda$~max~ / nm <br> $n \longrightarrow \pi^\ast$  <br> $\pi \longrightarrow \pi^\ast$|
 |:----------|:----------|:----------|:----------|
 | <img src="images/butadienestructure.png" alt="butadiene structure" width="75"/>| 217 | <img src="images/acetonestructure.png" alt="acetone structure" width="50"/>| 270 <br>  187|
 | <img src="images/hexadienestructure.png" alt="hexadiene structure" width="125"/>| 227 | ||
@@ -213,7 +217,7 @@ Table: (\#tab:lambdaconj)  The dependence of maximum absorption wavelength on th
 
 ## Selection rules for absorption & emission processes {#sec:selectionrules}
 
-In molecular systems he most important selection rule is $\Delta S = 0$, or there can be no change in the spin multiplicity during an absorption or emission processes, or there can be no ‘flipping’ of electrons spin during a transition. In practice ‘coupling’ due to interactions between the spin of the electron and the orbital mean that this selection rule is not rigidly followed.
+In molecular systems the most important selection rule is $\Delta S = 0$, or there can be no change in the spin multiplicity during an absorption or emission processes, or there can be no ‘flipping’ of electrons spin during a transition. In practice ‘coupling’ due to interactions between the spin of the electron and the orbital mean that this selection rule is not rigidly followed.
 
 In organic molecules containing only C, H, N & O the direct absorption from S~0~ to T~1~ is so weak that it can’t be seen in the absorption spectra. This ‘spin-orbit coupling’ is more pronounced for heavier elements and molecules containing particularly heavy atoms, such as S, Cl or Br have more relaxed adherence to the $\Delta S = 0$ selection rule.
 
@@ -232,7 +236,7 @@ Whilst these transitions would be forbidden according to the Laporte rule:
 Consequently the $d-d$ transitions, such as the $t_{2g} \longleftrightarrow e_g$ transition in octahedral complexes, which give most transition metal complexes are forbidden according to the Laporte rule. 
 
 
-```{r echo=FALSE, Tisplitting, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The ligand field splitting of the 3d orbitals in a  [Ti(H2O)6]3+ complex the solution is pale purple with a molar extinction coefficient, ε ~ 6.1 M−1 cm−1'}
+```{r echo=FALSE, Tisplitting, out.width='60%', fig.show='hold', fig.align='center', fig.cap="The ligand field splitting of the 3d orbitals in a  [Ti(H$_2$O)$_6]$^{3+}$ complex the solution is pale purple with a molar extinction coefficient, ε ~ 6.1 M^−1^ cm$^{−}1$"}
 knitr::include_graphics("images/Ti3splitting.png")
 ```
 
@@ -297,13 +301,13 @@ knitr::include_graphics("images/CS2.png")
 
 For more complicated molecules each of the transitions from the HOMO, HOMO-1 to the LUMO *etc.* occur with different transition dipole moments across the chromophore, figure \@ref{fig:adenosine}. Each transition is only excited when light is aligned with that transition; in most cases this isn’t something we need to consider as most incident light we consider is isotropic, but alignment of transition dipoles  (either between light and molecules - or between two different molecules) is an important consideration.
 
-```{r echo=FALSE, adenosine, out.width='100%', fig.show='hold', fig.align='center', fig.cap='The three lowest energy transitions of adenosine each indicated with their transition dipole moment (all in the plane of the molecule, calculated values).These match with the observed spectrum with a weak transition around 310 nm, a much stronger transition around 260 nm and a third transition starting at the edge of the measured spectrum. Spectrum Adapted from OMLC ( https:// omlc.org/spectra/PhotochemCAD/html/033.html), 31st October 2018'}
+```{r echo=FALSE, adenosine, out.width='100%', fig.show='hold', fig.align='center', fig.cap="The three lowest energy transitions of adenosine each indicated with their transition dipole moment (all in the plane of the molecule, calculated values).These match with the observed spectrum with a weak transition around 310 nm, a much stronger transition around 260 nm and a third transition starting at the edge of the measured spectrum. [Spectrum [Adapted from OMLC]( https:// omlc.org/spectra/PhotochemCAD/html/033.html), 31st October 2018]"}
 knitr::include_graphics("images/adenosine.png")
 ```
 
 As already discussed the transition dipole moment is derived from the difference in electron density of the ground and excited state. Figure \@ref(fig:PhenRubpy3) shows the HOMO and LUMO of an organic chromophore, and a metal complex MLCT state.
 
-```{r echo=FALSE, PhenRubpy3, out.width='100%', fig.show='hold', fig.align='center', fig.cap='The calculated HOMO (bottom) and LUMO (top) of 1,10-phenanthroline (left) a model planar organic chromophore and [Ru (bpy)3]2+ (bpy - bipyridine) which has an MLCT state. For the ruthenium complex the HOMO is clearly centred on $4d_{z^2}$ orbital, whereas after absorption of a photon (and transfer of the electron) the electron density is then centred over the ligands in the LUMO.'}
+```{r echo=FALSE, PhenRubpy3, out.width='100%', fig.show='hold', fig.align='center', fig.cap="The calculated HOMO (bottom) and LUMO (top) of 1,10-phenanthroline (left) a model planar organic chromophore and [Ru (bpy)$_3$]$^{2+}$ (bpy - bipyridine) which has an MLCT state. For the ruthenium complex the HOMO is clearly centred on $4d_{z^2}$ orbital, whereas after absorption of a photon (and transfer of the electron) the electron density is then centred over the ligands in the LUMO."}
 knitr::include_graphics("images/PhenRubpy3.png")
 ```
 
@@ -325,9 +329,12 @@ Another major factor that can affect the absorption of a sample are interactions
 knitr::include_graphics("images/DNAmelt.png")
 ```
 
-## Before Completing this Section
+## Before Completing this Section {#sec:before1}
+
+<iframe width="656" height="369" src="https://www.youtube.com/embed/PiXi74luVvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 To support the material in this section it is suggested you read chapter 2 of Wardle ‘Principles and Application of Photochemistry’ and the section in Atkins’ ‘Physical Chemistry’ on Einstein coefficients. If you need a refresher of some MO theory it is recommended you look at the early chapters of Chemistry^3^.
+
 
 ## Self Assessment Exercises {#sec:SSQabs}
 

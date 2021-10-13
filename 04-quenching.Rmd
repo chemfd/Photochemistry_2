@@ -171,6 +171,8 @@ where $J$ is the overlap integral, $K$ an empirical constant, $r$ the separation
 
 From examining equation \@ref(eq:ratedexter) it can be seen that the rate of Dexter energy transfer decreases rapidly with increasing separation of donor and acceptor and occurs daily at distances less than 20 Å. Dexter energy transfer is the most dominant mechanism of triplet-triplet quenching.
 
+<iframe width="569" height="427" src="https://www.youtube.com/embed/JSUHF915pYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Triplet-Triplet Annihilation {#sec:tripletannihilation}
 
 Excited state triplets are long lived, due to the spin-forbidden relaxation pathways back to the $S_0$ state. However, there is a deactivation pathway that occurs by annihilation of two triplet states leading to formation of an excited state singlet and a ground state singlet.

@@ -17,7 +17,19 @@ The notes have been prepared in a package called BookDown for RStudio so that th
 
 This is a new format of the document for this year and is easily editable, therefore if you do find any typing errors, areas with lack of clarity, or other errors please let me know. I will update the document accordingly and update the version history below. If there are any major changes I will inform you as a class.
 
+## Additional Resources {#sec:AddnRes}
+
+Whilst this resource is designed to stand alone, you may find it beneficial to read around the subject or else listen to the concept bites. I refer to the book by Wardle frequently and you have access to it digitally via the library, although there are a number of excellent photochemistry textbooks. If you want more details about other books please contact me.
+
+## Report errors
+
+If you spot any errors or areas of lack of clarity, please message me in Teams or preferably report on the error log below:
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc83b-C0FsgDr5eQxvT-2NWwEtvOEwYU1WbLE4j53wWfUDIXQ/viewform?embedded=true" width="640" height="1242" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 ## Version history {-}
+Trying to fix legacy errors ready for the year 13th October 2021.
+
 Updated for pdf but introduced errors with sub and superscripts in figure captions 9th October 2020.
 
 Updated with learning outcomes for each chapter and updated content in chapter 6. 8th September 2020.

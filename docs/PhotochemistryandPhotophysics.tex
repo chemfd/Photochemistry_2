@@ -50,7 +50,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -75,12 +75,15 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{Photochemistry and Photophysics}
 \author{Fiona Dickinson}
-\date{2021-01-19}
+\date{2021-10-13}
 
 \begin{document}
 \maketitle
@@ -97,9 +100,23 @@ The notes have been prepared in a package called BookDown for RStudio so that th
 
 This is a new format of the document for this year and is easily editable, therefore if you do find any typing errors, areas with lack of clarity, or other errors please let me know. I will update the document accordingly and update the version history below. If there are any major changes I will inform you as a class.
 
+\hypertarget{sec:AddnRes}{%
+\section{Additional Resources}\label{sec:AddnRes}}
+
+Whilst this resource is designed to stand alone, you may find it beneficial to read around the subject or else listen to the concept bites. I refer to the book by Wardle frequently and you have access to it digitally via the library, although there are a number of excellent photochemistry textbooks. If you want more details about other books please contact me.
+
+\hypertarget{report-errors}{%
+\section{Report errors}\label{report-errors}}
+
+If you spot any errors or areas of lack of clarity, please message me in Teams or preferably report on the error log below:
+
+Loading\ldots{}
+
 \hypertarget{version-history}{%
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
+
+Trying to fix legacy errors ready for the year 13th October 2021.
 
 Updated for pdf but introduced errors with sub and superscripts in figure captions 9th October 2020.
 
@@ -109,6 +126,8 @@ The initial commit of this book is dated 6th September 2020.
 
 \hypertarget{ch:Intro}{%
 \chapter{Introduction to Photochemistry \& Photophysics}\label{ch:Intro}}
+
+Some context on this course.
 
 Photochemistry is by definition from IUPAC `the branch of chemistry concerned with the chemical effects of light'\footnote{IUPAC Goldbook, \url{http://goldbook.iupac.org/terms/view/P04588} (accessed July 2020).}. However, in this course we are going to explore beyond just chemical reactions to also examine some of the fundamental photo physics of systems. Photophysics is closely related to what you have previously studied in your first and second years, in that it is a study of the processes of absorption and emission of light and the kinetics of these processes.
 
@@ -154,10 +173,16 @@ transitions which convert between excited states or between an excited state and
 
 reactions or rearrangements which occur as a consequence of excitation from the ground state
 
-\hypertarget{sec:AddnRes}{%
-\section{Additional Resources}\label{sec:AddnRes}}
+\hypertarget{assumed-background-knowledge}{%
+\section{Assumed background knowledge}\label{assumed-background-knowledge}}
 
-Whilst this resource is designed to stand alone, you may find it beneficial to read around the subject or else listen to the lectures and concept bites.
+The course relies heavily on first and second year kinetics concepts as well as building on the quantum mechanics from second year and some of the spectroscopy you did in first year. Whilst I have done my best to ensure that there is a minimum of non-physical chemistry content required to get the most out of this course if I want to talk about molecules some very basic knowledge from both organic and inorganic chemistry, much of which will at least have been mentioned at `A'-level or IB.
+
+I will talk a lot about σ and π bonding, but this has been covered in quantum mechanics, a double bond has one σ and one π bond. I will also talk about shape and structure, a carbon with only σ bonds is 3 dimensional and tetrahedral, a carbon with 3 σ and 1 π bond is trigonal planar, and one with 2 σ and 2 π bonds is linear.
+
+However we need to think about the fact that a molecular orbital exists over a hole molecule. If we reduce bond order overall we change the shape of the molecule. This will be discussed in the absorption (Chapter \ref{ch:Abs}) section of this course.
+
+If you need more help on structure, bonding or metal complexes Chemistry3 is an excellent book to start with, or please ask for help.
 
 I also recommend:
 
@@ -174,7 +199,12 @@ I also recommend:
 \end{itemize}
 
 \begin{figure}
-\includegraphics[width=0.6\linewidth]{images/EM-Wave} \caption{The orthogonal electric and magnetic oscillating fields of plan polarised light, propagating along the x-axis. From: [And1mu](https://upload.wikimedia.org/wikipedia/commons/9/99/EM-Wave.gif) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)}\label{fig:EMWave}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/EM-Wave} 
+
+}
+
+\caption{The orthogonal electric and magnetic oscillating fields of plan polarised light, propagating along the x-axis. From: [And1mu](https://upload.wikimedia.org/wikipedia/commons/9/99/EM-Wave.gif) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)}\label{fig:EMWave}
 \end{figure}
 
 \hypertarget{sec:Light}{%
@@ -214,6 +244,8 @@ At the end of this section you should be able to:
   Explain some of the factors which affect absorption
 \end{itemize}
 
+There is a Concept Bite video in Section \ref{sec:before1} which summarises much of this content.
+
 \hypertarget{sec:AbsIntro}{%
 \section{Introduction}\label{sec:AbsIntro}}
 
@@ -236,7 +268,7 @@ When you saw atomic absorption and emission spectra the lines were very sharp, o
 
 }
 
-\caption{The absorption (black) and emission (teal) spectra of Rhodamine 6G in ethanol. The emission spectra was recorded with an excitation wavelength of 480 nm and a bandwidth of 4.25 nm. Adapted from OMLC (https://omlc.org/spectra/PhotochemCAD/html/083.html), 2nd July 2014}\label{fig:RhoAbsEm}
+\caption{The absorption (black) and emission (teal) spectra of Rhodamine 6G in ethanol. The emission spectra was recorded with an excitation wavelength of 480 nm and a bandwidth of 4.25 nm [Adapted from [OMLC](https://omlc.org/spectra/PhotochemCAD/html/083.html), [2nd July 2014]]}\label{fig:RhoAbsEm}
 \end{figure}
 
 \hypertarget{sec:BeerLambert}{%
@@ -457,7 +489,7 @@ The greater the amount of conjugation in a molecule the smaller the energy gap b
 This fits with the theory you learnt in your quantum mechanics lectures, where you can model the linear conjugated model quite accurately using the particle in a one dimensional box model.
 
 \begin{longtable}[]{@{}llll@{}}
-\caption{\label{tab:lambdaconj} The dependence of maximum absorption wavelength on the increasing length of conjugation is clearly shown by moving along the diene, diene, polyene series. Inclusion of a hetero atom with lone pairs introduces non-bonding, \(n\), electrons into the MO, and a second absorption band \(n \longrightarrow \pi^\ast\) introduced with a lower energy transition.}\tabularnewline
+\caption{\label{tab:lambdaconj} The dependence of maximum absorption wavelength on the increasing length of conjugation is clearly shown by moving along the diene, triene, polyene series. Inclusion of a hetero atom with lone pairs introduces non-bonding, \(n\), electrons into the MO, and a second absorption band \(n \longrightarrow \pi^\ast\) introduced with a lower energy transition.}\tabularnewline
 \toprule
 \begin{minipage}[b]{0.22\columnwidth}\raggedright
 \strut
@@ -466,7 +498,7 @@ This fits with the theory you learnt in your quantum mechanics lectures, where y
 \end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
 \strut
 \end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\) \(n \longrightarrow \pi^\ast\)\strut
+\(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\)\strut
 \end{minipage}\tabularnewline
 \midrule
 \endfirsthead
@@ -478,7 +510,7 @@ This fits with the theory you learnt in your quantum mechanics lectures, where y
 \end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
 \strut
 \end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\) \(n \longrightarrow \pi^\ast\)\strut
+\(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\)\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
@@ -524,7 +556,7 @@ This fits with the theory you learnt in your quantum mechanics lectures, where y
 \hypertarget{sec:selectionrules}{%
 \section{Selection rules for absorption \& emission processes}\label{sec:selectionrules}}
 
-In molecular systems he most important selection rule is \(\Delta S = 0\), or there can be no change in the spin multiplicity during an absorption or emission processes, or there can be no `flipping' of electrons spin during a transition. In practice `coupling' due to interactions between the spin of the electron and the orbital mean that this selection rule is not rigidly followed.
+In molecular systems the most important selection rule is \(\Delta S = 0\), or there can be no change in the spin multiplicity during an absorption or emission processes, or there can be no `flipping' of electrons spin during a transition. In practice `coupling' due to interactions between the spin of the electron and the orbital mean that this selection rule is not rigidly followed.
 
 In organic molecules containing only C, H, N \& O the direct absorption from S\textsubscript{0} to T\textsubscript{1} is so weak that it can't be seen in the absorption spectra. This `spin-orbit coupling' is more pronounced for heavier elements and molecules containing particularly heavy atoms, such as S, Cl or Br have more relaxed adherence to the \(\Delta S = 0\) selection rule.
 
@@ -542,14 +574,14 @@ Whilst these transitions would be forbidden according to the Laporte rule:
 
 Consequently the \(d-d\) transitions, such as the \(t_{2g} \longleftrightarrow e_g\) transition in octahedral complexes, which give most transition metal complexes are forbidden according to the Laporte rule.
 
-\begin{figure}
+\textbackslash begin\{figure\}
 
-{\centering \includegraphics[width=0.6\linewidth]{images/Ti3splitting} 
+\{\centering \includegraphics[width=0.6\linewidth]{images/Ti3splitting}
 
-}
+\}
 
-\caption{The ligand field splitting of the 3d orbitals in a  [Ti(H2O)6]3+ complex the solution is pale purple with a molar extinction coefficient, ε ~ 6.1 M−1 cm−1}\label{fig:Tisplitting}
-\end{figure}
+\textbackslash caption\{The ligand field splitting of the 3d orbitals in a {[}Ti(H\(_2\)O)\$\_6{]}\(^{3+}\) complex the solution is pale purple with a molar extinction coefficient, ε \textasciitilde{} 6.1 M\textsuperscript{−1} cm\(^{−}1\)\}\label{fig:Tisplitting}
+\textbackslash end\{figure\}
 
 If we compare the magnitude of of the molar extinction coefficient for a typical \(d-d\) absorption of a transition metal complex with that of a `spin allowed' `Laporte allowed' organic dye molecule we can see the effect of `non allowed' transitions. In table \ref{tab:extcoeff}, the organics, DNA \& the synthetic dye TOTO-1 both have extended conjugated molecular orbitals, and the transitions are from singlet to singlet, an allowed transition.
 
@@ -643,7 +675,7 @@ For more complicated molecules each of the transitions from the HOMO, HOMO-1 to 
 
 }
 
-\caption{The three lowest energy transitions of adenosine each indicated with their transition dipole moment (all in the plane of the molecule, calculated values).These match with the observed spectrum with a weak transition around 310 nm, a much stronger transition around 260 nm and a third transition starting at the edge of the measured spectrum. Spectrum Adapted from OMLC ( https:// omlc.org/spectra/PhotochemCAD/html/033.html), 31st October 2018}\label{fig:adenosine}
+\caption{The three lowest energy transitions of adenosine each indicated with their transition dipole moment (all in the plane of the molecule, calculated values).These match with the observed spectrum with a weak transition around 310 nm, a much stronger transition around 260 nm and a third transition starting at the edge of the measured spectrum. [Spectrum [Adapted from OMLC]( https:// omlc.org/spectra/PhotochemCAD/html/033.html), 31st October 2018]}\label{fig:adenosine}
 \end{figure}
 
 As already discussed the transition dipole moment is derived from the difference in electron density of the ground and excited state. Figure \ref{fig:PhenRubpy3} shows the HOMO and LUMO of an organic chromophore, and a metal complex MLCT state.
@@ -654,7 +686,7 @@ As already discussed the transition dipole moment is derived from the difference
 
 }
 
-\caption{The calculated HOMO (bottom) and LUMO (top) of 1,10-phenanthroline (left) a model planar organic chromophore and [Ru (bpy)3]2+ (bpy - bipyridine) which has an MLCT state. For the ruthenium complex the HOMO is clearly centred on $4d_{z^2}$ orbital, whereas after absorption of a photon (and transfer of the electron) the electron density is then centred over the ligands in the LUMO.}\label{fig:PhenRubpy3}
+\caption{The calculated HOMO (bottom) and LUMO (top) of 1,10-phenanthroline (left) a model planar organic chromophore and [Ru (bpy)$_3$]$^{2+}$ (bpy - bipyridine) which has an MLCT state. For the ruthenium complex the HOMO is clearly centred on $4d_{z^2}$ orbital, whereas after absorption of a photon (and transfer of the electron) the electron density is then centred over the ligands in the LUMO.}\label{fig:PhenRubpy3}
 \end{figure}
 
 \hypertarget{factors-which-affect-the-absorption}{%
@@ -686,8 +718,8 @@ Another major factor that can affect the absorption of a sample are interactions
 \caption{A sketch of the melting of DNA leading to a large increase in absorption. The melting temperature T~m~, is defined much as the end point of a titration curve is, as halfway between the two turning points. The increase in absorbance is due to the breaking of the π stack which exists in double stranded helical DNA.}\label{fig:DNAmelt}
 \end{figure}
 
-\hypertarget{before-completing-this-section}{%
-\section{Before Completing this Section}\label{before-completing-this-section}}
+\hypertarget{sec:before1}{%
+\section{Before Completing this Section}\label{sec:before1}}
 
 To support the material in this section it is suggested you read chapter 2 of Wardle `Principles and Application of Photochemistry' and the section in Atkins' `Physical Chemistry' on Einstein coefficients. If you need a refresher of some MO theory it is recommended you look at the early chapters of Chemistry\textsuperscript{3}.
 
@@ -806,7 +838,7 @@ A Jablonski diagram (figure \ref{fig:Jablonski}) usually uses a short hand to re
 
 }
 
-\caption{Jablonski diagram showing: A, the absorption of a photon, and the photophysical deactivation pathways, IC, internal conversion, ISC, intersystem crossing, F, fluorescence and P, phosphorescence.}\label{fig:Jablonski}
+\caption{Jablonski diagram showing: A, the absorption of a photon, and the photophysical deactivation pathways, IC, internal conversion, ISC, intersystem crossing, F, fluorescence \& P, phosphorescence.}\label{fig:Jablonski}
 \end{figure}
 
 Triplet states are referred to as T\textsubscript{1}, T\textsubscript{2}\ldots{} if the ground state is not a triplet then there is no state labelled T\textsubscript{0}. All excited states are referred to by integer vales of 1 or more.
@@ -847,7 +879,7 @@ fluorescence\strut
 \begin{minipage}[t]{0.39\columnwidth}\raggedright
 Singlet-triplet absorption Triplet-singlet emission\strut
 \end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-phosphorescence\strut
+fluorescence\strut
 \end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
 \(S_0 + h \nu \longrightarrow T_1\) \(T_1 \longrightarrow S_0 + h \nu ''\)\strut
 \end{minipage}\tabularnewline
@@ -913,7 +945,7 @@ The Franck-Condon factors in absorption and emission is clearly evident by the s
 
 }
 
-\caption{The absorption and emission spectra of rhodamine 6G showing the Stokes shift of the two spectra. Data from [OMLC] (https://omlc.org/spectra/PhotochemCAD/html/083.html), accessed July 2020}\label{fig:stokesspectrum}
+\caption{The absorption and emission spectra of rhodamine 6G showing the Stokes shift of the two spectra.[Data from [OMLC](https://omlc.org/spectra/PhotochemCAD/html/083.html), accessed July 2020]}\label{fig:stokesspectrum}
 \end{figure}
 
 The axis title of 'reaction coordinate' is used ubiquitously, but is poorly understood. The simple idea that a bond becomes longer (as would be the case for a diatomic molecule) does not apply as we are considering the whole molecule.
@@ -1221,14 +1253,14 @@ To support the material in this section it is suggested you read chapters 3 \& 4
 
 \begin{longtable}[]{@{}lll@{}}
 \toprule
-Compound \textbar{} k\textasciitilde{} & k\textsubscript{p} / s\textsuperscript{−1} \textbar{} k\textsubscript{ST} / s\textsuperscript{−1} & k\textsubscript{ST} / s\textsuperscript{−1} \textbar{}\tabularnewline
+Compound & k\textsubscript{p} / s\textsuperscript{−1} & k\textsubscript{ST} / s\textsuperscript{−1}\tabularnewline
 \midrule
 \endhead
-naphthalene \textbar{} 0.05 \textbar{} & 0.05 \textbar{} 0.39 \textbar{} & 0.39 \textbar{}\tabularnewline
-1-fluoronaphthalene \textbar{} & 0.23 \textbar{} 0.42 \textbar{} & 0.42 \textbar{}\tabularnewline
-1-chloronaphthalene \textbar{} & 1.10 \textbar{} 2.35 \textbar{} & 2.35 \textbar{}\tabularnewline
-1-bromonaphthalene \textbar{} 1 & 13.5 \textbar{} 36.5 \textbar{} & 36.5 \textbar{}\tabularnewline
-1-iodonaphthalene \textbar{} 19 & 190 \textbar{} 310 \textbar{} & 310 \textbar{}\tabularnewline
+naphthalene & 0.05 & 0.39\tabularnewline
+1-fluoronaphthalene & 0.23 & 0.42\tabularnewline
+1-chloronaphthalene & 1.10 & 2.35\tabularnewline
+1-bromonaphthalene & 13.5 & 36.5\tabularnewline
+1-iodonaphthalene & 190 & 310\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1286,13 +1318,13 @@ According to Kasha's rule, emission always happens from the lowest vibrational s
   \end{equation}
 \end{enumerate}
 
-Intersystem crossing (\(S_1\) - \(T_1\))
+Intersystem crossing (\(S_1\) - \(T_1\))\\
 \begin{equation}
 \phi_ST = \frac{k_ST}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
 \label{eq:QYST}
 \end{equation}
 
-Intersystem crossing (\(T_1\) - \(S_0\))
+Intersystem crossing (\(T_1\) - \(S_0\))\\
 \begin{equation}
 \phi_TS = \frac{k_TS}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
 \label{eq:QYTS}
@@ -1562,8 +1594,8 @@ Usually the molecular oxygen is excited into the \^{}\textsuperscript{Σ\textsub
 
 Chemically singlet oxygen formation is very interesting as it is extremely reactive, and has been shown to be an important factor in a number of mechanistic pathways leading to damage of DNA and proteins.
 
-\hypertarget{before-completing-this-section}{%
-\section{Before Completing this Section}\label{before-completing-this-section}}
+\hypertarget{before-completing-this-section-1}{%
+\section{Before Completing this Section}\label{before-completing-this-section-1}}
 
 To support the material in this section it is suggested you read chapter 6 of Wardle `Principles and Application of Photochemistry'.
 
@@ -1756,8 +1788,8 @@ Exciplexes are common in organic solvent as non polar solvents are not good at s
 
 Please see video above in Section \ref{sec:excimers} for a review of this topic (timecode 4m52s).
 
-\hypertarget{before-completing-this-section}{%
-\section{Before Completing this Section}\label{before-completing-this-section}}
+\hypertarget{before-completing-this-section-2}{%
+\section{Before Completing this Section}\label{before-completing-this-section-2}}
 
 To support the material in this section it is suggested you read pages 90-96 of Wardle `Principles and Application of Photochemistry'.
 
@@ -2022,7 +2054,7 @@ k_\textrm{obs}= \frac{k_\textrm{et}k_\textrm{d}}{k_\textrm{et}+k_\textrm{d}}
 \label{eq:kobs}
 \end{equation}
 
-To observe the Marcus inverted region working in rigid or viscous solvent where diffusion is limited is one possibility, or else using a rigid scaffold to hold rigidly the donor and acceptor is also another way to observe this phenomenon. However, the Marcus inverted region is infact mostly likely to be observed in charge recombination reactions\footnote{There are a number of papers which show the Marcus }.
+To observe the Marcus inverted region working in rigid or viscous solvent where diffusion is limited is one possibility, or else using a rigid scaffold to hold rigidly the donor and acceptor is also another way to observe this phenomenon. However, the Marcus inverted region is infact mostly likely to be observed in charge recombination reactions\footnote{There are a number of papers which show the Marcus}.
 
 \hypertarget{sec:ETinDNA}{%
 \section{Electron transfer reactions in DNA}\label{sec:ETinDNA}}
@@ -2123,8 +2155,8 @@ There has been a great deal of interest in the field of phototheraputics; or usi
 
 Using a slightly more targeted approach a number of molecules have been developed for use in photodynamic therapy for treatment of conditions such as cancer. Traditional chemotherapies make use of the higher metabolic rate of cancerous cells and a generally not very specific, which is the reason for the large number of side effects. Photodynamic therapy hopes to use a drug which is completely non toxic in the `dark state' but upon absorption of a photon the molecule becomes highly reactive to either DNA or proteins. Since light can be easily directed only the treated area is generates toxins, however this means that only accessible regions such skin and lungs may be treated. An ideal photodynamic agent will be blue (have a red absorption) so that the light may be transmitted through the skin and blood vessels and will be highly active. Cells have a number of `anti oxidant' repair mechanisms and so damage has to be significant so as to either stop cell replication or cause apoptosis.
 
-\hypertarget{before-completing-this-section}{%
-\section{Before Completing this Section}\label{before-completing-this-section}}
+\hypertarget{before-completing-this-section-3}{%
+\section{Before Completing this Section}\label{before-completing-this-section-3}}
 
 To support the material in this section it is suggested you read chapters 8 \& 12 of Wardle `Principles and Application of Photochemistry'.
 

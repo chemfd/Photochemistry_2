@@ -22,7 +22,6 @@ At the end of this block you should be able to:
 - Discuss the heavy atom effect.
 
 
-
 Only the light absorbed by a molecule can produce photochemical change in a molecule. If a species absorbs radiation then one particle is excited for each quantum of radiation absorbed. This concept of light having to be absorbed before anything else can happen is an obvious one, but is an important concept in itself, it goes on to define the concept of quantum yield of a process, effectively the proportion of excited states which ‘decay’ to any given pathway.
 
 ## Fluorescence & Phosphorescence {#sec:FluorPhos}
@@ -33,7 +32,7 @@ If we look at a Jablonski diagram, figure 19, which you should already be famili
 
 A Jablonski diagram (figure \@ref(fig:Jablonski)) usually uses a short hand to refer to the excited states, where a ground state, if it is a singlet, is referred to as S~0~, and each subsequent excited state is referred to as S~1~, S~2~ *etc*.
 
-```{r echo=FALSE, Jablonski, out.width='70%', fig.show='hold', fig.align='center', fig.cap='Jablonski diagram showing: A, the absorption of a photon, and the photophysical deactivation pathways, IC, internal conversion, ISC, intersystem crossing, F, fluorescence and P, phosphorescence.'}
+```{r echo=FALSE, Jablonski, out.width='70%', fig.show='hold', fig.align='center', fig.cap='Jablonski diagram showing: A, the absorption of a photon, and the photophysical deactivation pathways, IC, internal conversion, ISC, intersystem crossing, F, fluorescence \\& P, phosphorescence.'}
 knitr::include_graphics("images/Jablonski.png")
 ```
 
@@ -54,7 +53,7 @@ Table: (\#tab:phototrans) The excitation and decay pathways in molecules.
 |*'Allowed transitions'*| | |
 |Singlet-singlet absorption <br> Singlet-singlet emission|<br> fluorescence | $S_0 + h \nu \longrightarrow S_1$ <br> $S_1 \longrightarrow S_0 + h \nu '$|
 |*'Forbidden transitions'*|||
-|Singlet-triplet absorption <br> Triplet-singlet emission|<br> phosphorescence | $S_0 + h \nu \longrightarrow T_1$ <br> $T_1 \longrightarrow S_0 + h \nu ''$|
+|Singlet-triplet absorption <br> Triplet-singlet emission|<br> fluorescence | $S_0 + h \nu \longrightarrow T_1$ <br> $T_1 \longrightarrow S_0 + h \nu ''$|
 |*'Other transitions'* | | |
 |Internal conversion <br> <Intersystem crossing> <br> <Intersystem crossing>  | (vibrational relaxation) <br> <br> (vibrational relaxation) | $S_1 \longrightarrow S_0 + heat$ <br> $S_1 \longrightarrow T_1 + heat$ <br> $T_1 \longrightarrow S_0 + heat$|
 |*Other pathways*| | |
@@ -79,7 +78,7 @@ knitr::include_graphics("images/anthracenekasha.png")
 
 The Franck-Condon factors in absorption and emission is clearly evident by the symmetry shown in the emission of most organic chromophores. The Stoke’s shift, the difference between the $v=0$ to $v’=0$ absorption peak and the $v’=0$ to $v=0$ emission peak, can simply be explained by the offset of the ground and excited state potential wells (figure \@ref(fig:stokesspectrum)). Absorption happens from the centre of the $v=0$ ground state and emission from the centre of the $v’=0$ excited state, however this does not explain why the two curves are offset from one another.
 
-```{r echo=FALSE, stokesspectrum, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The absorption and emission spectra of rhodamine 6G showing the Stokes shift of the two spectra. Data from [OMLC] (https://omlc.org/spectra/PhotochemCAD/html/083.html), accessed July 2020'}
+```{r echo=FALSE, stokesspectrum, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The absorption and emission spectra of rhodamine 6G showing the Stokes shift of the two spectra.[Data from [OMLC](https://omlc.org/spectra/PhotochemCAD/html/083.html), accessed July 2020]'}
 knitr::include_graphics("images/stokesspectrum.png")
 ```
 
@@ -215,6 +214,7 @@ So for an excited singlet state the fluorescence lifetime is related to the conc
 where $\tau$ is the value given in equation \@ref(eq:lifetimefluor).
 
 <div style="text-align: center;"><iframe width="480" height="360" src="https://www.youtube.com/embed/efs_ro_mV2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 
 ## The Energy Gap Law {#sec:energygap}
 
