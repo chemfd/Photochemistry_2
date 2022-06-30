@@ -24,33 +24,28 @@ It is just over 100 years since quantum theory revolutionised our understanding 
 * quantum mechanics
 
 
-*Photophysical processes*
+**Photophysical processes**
 
-transitions which convert between excited states or between an excited state and a ground state of a molecule
+*transitions which convert between excited states or between an excited state and a ground state of a molecule
 
-*Photochemical processes*
+**Photochemical processes**
 
-reactions or rearrangements which occur as a consequence of excitation from the ground state
+*reactions or rearrangements which occur as a consequence of excitation from the ground state
 
 ## Assumed background knowledge
 
 The course relies heavily on first and second year kinetics concepts as well as building on the quantum mechanics from second year and some of the spectroscopy you did in first year. Whilst I have done my best to ensure that there is a minimum of non-physical chemistry content required to get the most out of this course if I want to talk about molecules some very basic knowledge from both organic and inorganic chemistry, much of which will at least have been mentioned at 'A'-level or IB.
 
-I will talk a lot about σ and π bonding, but this has been covered in quantum mechanics, a double bond has one σ and one π bond. I will also talk about shape and structure, a carbon with only σ bonds is 3 dimensional and tetrahedral, a carbon with 3 σ and 1 π bond is trigonal planar, and one with 2 σ and 2 π bonds is linear. 
+I will talk a lot about $\sigma$ and $\pi$ bonding, but this has been covered in quantum mechanics, a double bond has one $\sigma$ and one $\pi$ bond. I will also talk about shape and structure, a carbon with only $\sigma$ bonds is 3 dimensional and tetrahedral, a carbon with 3 $\sigma$ and 1 $\pi$ bond is trigonal planar, and one with 2 $\sigma$ and 2 $\pi$ bonds is linear. 
 
 However we need to think about the fact that a molecular orbital exists over a hole molecule. If we reduce bond order overall we change the shape of the molecule. This will be discussed in the absorption (Chapter \@ref(ch:Abs)) section of this course.
 
-If you need more help on structure, bonding or metal complexes Chemistry3 is an excellent book to start with, or please ask for help.
-
-I also recommend:
-
-* Principles & Applications of Photochemistry, Brian Wardle,Wiley, ISBN 0470014938 (available as an ebook from the library).
-* Photochemistry, Carol E.Wayne & Richard P.Wayne, OUP (primer), ISBN 0198558864 (a really nice primer well worth the money if you are interested in photochemistry)
-* Principles of Molecular Photochemistry, Nicholas J.Turro,V. Ramamurthy, J.C. Scaiano, University Science Books, ISBN 1891389573
-* The book Principles of Fluorescence Spectroscopy (3rd Edition) by Joseph R. Lakowicz (Springer, ISBN 0387312781) may also be useful for the sections on fluorescence.
+If you need more help on structure, bonding or metal complexes Chemistry^3^ is an excellent book to start with, or please ask for help.
 
 
-```{r echo=FALSE, EMWave, out.width='60%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The orthogonal electric and magnetic oscillating fields of plan polarised light, propagating along the x-axis. From: [And1mu](https://upload.wikimedia.org/wikipedia/commons/9/99/EM-Wave.gif) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)"}
+
+
+```{r echo=FALSE, EMWave, out.width='60%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Light as a wave is made up of orthogonal oscillating electric and magnetic fields. From: [And1mu](https://upload.wikimedia.org/wikipedia/commons/9/99/EM-Wave.gif) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)", fig.alt="The orthogonal electric and magnetic oscillating fields of plain polarised light, propagating along the x-axis."}
 knitr::include_graphics("images/EM-Wave.gif")
 ```
 
@@ -60,13 +55,23 @@ knitr::include_graphics("images/EM-Wave.gif")
 ## Light {#sec:Light}
 
 
-As you’ve already learnt light exhibits properties that have both a wave like and a particle like nature, and light was one of the fundamental pieces that lead towards the quantum theory of the atom. Newton had shown that light from the sun is comprised of a spectrum of colours, we now know that that spectrum goes beyond what we can see with our eyes.
+As you’ve already learnt light exhibits properties that has both a wave like and particle like nature, and our understanding of light was one of the fundamental pieces that lead towards the quantum theory of the atom. Newton had shown that light from the sun is comprised of a spectrum of colours, we now know that that spectrum goes beyond what we can see with our eyes.
 
-```{r echo=FALSE, EMspect, out.width='100%', fig.show='hold', fig.cap='TheThe electromagnetic spectrum of light, frequency and energy are equivalent, so high frequency waves have high energy photons'}
+```{r echo=FALSE, EMspect, out.width='100%', fig.show='hold', fig.cap='The electromagnetic spectrum of light, frequency and energy are equivalent, so high frequency waves have high energy photons',, fig.alt='The electromagnetic spectrum of light starting at high energy (short wavelength) on the left with x-rays and $\\gamma$-rays running at energies higher than 100 PHz, UV light is next highest in energy running between approximately 100 PHz and 1 PHz. The visible spectrum is then shown as a blow out region with extra detail and wavelengths shown for purple (about 400 nm) to red (about 700 nm) running through from purple to blue, cyan, green, yellow, orange and then red. Infra-red light is show to run from the visible range down to about 100 GHz, followed by microwaves (from around 100 GHz to 500 MHz) and lowest in energy are radio waves occupying all frequencies lower in energy than microwaves. Wavelengths and frequencies are both represented by a logarhymic scale. Each of the regions of the electromagnetic spectra are related to transitions within molecules from very high energy transitinos (in the high energy x-ray and $\\gamma$-ray region) for nuclear transions, to slighly lower energy transitions in the same spectral region of transitions involving core electrons, to transitions involving valence electrons in teh UV and visible region. The IR region covers vibrational transitions, whereas rotational transitions are covered in the microwave region. The lowest energy transitions are covered by the radio wave region of the spectra which is used in NMR spectrscopy which looks at nuclear spin.'}
 knitr::include_graphics("images/EMspectrumspectroscopy.png")
 ```
 
-In your studies you have already seen how large amounts of the electromagnetic spectrum is used for different spectroscopic techniques, making use of the quantised transitions within molecules. For example, infra-red light has the same energy as the vibrational transitions within molecules. In photochemistry, we are specifically interested in the visible and near UV part of the EM spectra as photons with this energy promote transitions for the valance electrons in the molecules we are interested in.
+In your studies you have already seen how large amounts of the electromagnetic spectrum is used for different spectroscopic techniques, making use of the quantised transitions within molecules. For example, infra-red light has the same energy as the vibrational transitions within molecules. In photochemistry, we are specifically interested in the visible and near UV part of the EM spectrum as photons with this energy promote transitions for the valance electrons in the molecules we are interested in.
 
-It is important never to forget the wave particle duality of light, however for much of photochemistry and photophysics it is perhaps simpler to consider the light as a stream of incident photons.
+It is important never to forget the wave particle duality of light, however for much of photochemistry and photophysics it is perhaps simpler to consider the light as a stream of incident photons, whilst there are classical (wave) models to thing of processes like absorption and emission this set of notes will usually defer to an entirely particle model of absportion or emission of a photon.
+
+## Feedback on this resource {-}
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI4QR8aDpXrTA9gBTloje_ipiAon727z-vJ2AkdpCKrwJjag/viewform?embedded=true" width="640" height="1220" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+## Formative questions {subsec:introqs}
+
+<iframe src="http://workitoutwithapencil.xyz/wp-admin/admin-ajax.php?action=h5p_embed&id=7" width="687" height="246" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="http://workitoutwithapencil.xyz/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+
 

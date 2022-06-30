@@ -4,10 +4,10 @@
 %
 \documentclass[
 ]{book}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -41,7 +41,8 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -75,7 +76,7 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifluatex
+\ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
@@ -83,7 +84,7 @@
 
 \title{Photochemistry and Photophysics}
 \author{Fiona Dickinson}
-\date{2021-10-13}
+\date{2022-06-30}
 
 \begin{document}
 \maketitle
@@ -96,14 +97,49 @@
 \chapter*{Welcome}\label{welcome}}
 \addcontentsline{toc}{chapter}{Welcome}
 
-The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I have also been able to embed short concept bite videos to further describe some of the topics. Further you can download the notes (top left of the screen) in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading.
+The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I have also been able to embed short concept bite videos to further describe some of the topics. Further you can access the notes in a format that suits you:
 
-This is a new format of the document for this year and is easily editable, therefore if you do find any typing errors, areas with lack of clarity, or other errors please let me know. I will update the document accordingly and update the version history below. If there are any major changes I will inform you as a class.
+\begin{itemize}
+\tightlist
+\item
+  download the notes (top bar on the screen) (either pdf or epub) to view offline (videos will not download).
+\item
+  or change the way this document appears for ease of reading (A button in toolbar), changing the font, font size and background colour.
+\end{itemize}
+
+The document is also searchable (magnifying glass in header bar) and you can access or remove the navigation list by clicking on the four horizontal lines in the header bar.
+
+This is a relatively new format of the document and is easily editable, therefore if you do find any typing errors, areas with lack of clarity, or other errors please let me know. I will update the document accordingly and update the version history below. If there are any major changes I will inform you as a class. I can and will also address areas where you feel there isn't enough detail, just use the same form below.
 
 \hypertarget{sec:AddnRes}{%
 \section{Additional Resources}\label{sec:AddnRes}}
 
-Whilst this resource is designed to stand alone, you may find it beneficial to read around the subject or else listen to the concept bites. I refer to the book by Wardle frequently and you have access to it digitally via the library, although there are a number of excellent photochemistry textbooks. If you want more details about other books please contact me.
+Whilst this resource is designed to stand alone, you will find it beneficial to read around the subject or else listen to the concept bites. I refer to the book by Wardle frequently and you have access to it digitally \emph{via} the library, although there are a number of excellent photochemistry textbooks which I've listed below.
+
+Whilst this is designed to be independent study it does not mean that you are alone in your learning. Please feel free to contact me for help or feedback (using Teams or email) and I can also help facilitate the formation of study groups. The value of peer interactions when learning cannot be overstated, find yourself a study buddy and help each other with your misconceptions and difficulties.
+
+\hypertarget{reading-list}{%
+\subsection*{Reading list}\label{reading-list}}
+\addcontentsline{toc}{subsection}{Reading list}
+
+Resources marked with a * have online access.
+
+\begin{itemize}
+\item
+  *\href{https://bibliu.com/app/\#/view/books/9780198558866/epub/html/toc.html}{Photochemistry}, Carol E. Wayne \& Richard P. Wayne. Oxford: OUP, 1996. Oxford Science Publications. ISBN 0198558864
+\item
+  \href{https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=44BAT_ALMA_DS2131580390002761\&context=L\&vid=44BAT_VU1\&lang=en_US\&search_scope=CSCOP_44BAT_DEEP\&adaptor=Local\%20Search\%20Engine\&tab=local\&query=any,contains,photochemistry\&sortby=rank\&facet=rtype,include,books\&offset=0\&pcAvailability=false}{Photochemistry} Calvert, J G., and J N. Pitts. Photochemistry.
+\item
+  *\href{https://ebookcentral.proquest.com/lib/bath/detail.action?docID=470772\&pq-origsite=primo}{Principles and Applications of Photochemistry} Brian Wardle, Wiley, 2009. ISBN 0470014938
+\item
+  *\href{https://ebookcentral.proquest.com/lib/bath/detail.action?pq-origsite=primo\&docID=1662200}{Photochemistry and Photophysics: Concepts, Research, Applications} Balzani, Vincenzo, Paola Ceroni, and Alberto Juris. P. Weinheim, Germany: Wiley-VCH, 2014.
+\item
+  \href{https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=44BAT_ALMA_DS2129513080002761\&context=L\&vid=44BAT_VU1\&lang=en_US\&search_scope=CSCOP_44BAT_DEEP\&adaptor=Local\%20Search\%20Engine\&tab=local\&query=any,contains,\%22modern\%20molecular\%20photochemistry\%22\%20turro\&offset=0\&pcAvailability=false}{Modern Molecular Photochemistry of Organic Molecules} Turro, N.J., Ramamurthy, V., and Scaiano, J. C. Modern Molecular Photochemistry of Organic Molecules. Sausalito, Calif.: U Science, 2010.
+\item
+  *\href{https://link.springer.com/book/10.1007/978-0-387-46312-4}{Principles of Fluorescence Spectroscopy (3rd Edition)} Joseph R. Lakowicz, Springer, 2006. ISBN 0387312781
+\item
+  \href{https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=44BAT_ALMA_DS2129552010002761\&context=L\&vid=44BAT_VU1\&lang=en_US\&search_scope=CSCOP_44BAT_DEEP\&adaptor=Local\%20Search\%20Engine\&tab=local\&query=any,contains,principles\%20of\%20molecular\%20photochemistry\%20ramamurthy\&offset=0\&pcAvailability=false}{Principles of Molecular Photochemistry: An Introduction}, Nicholas J.Turro,V. Ramamurthy, J.C. Scaiano, University Science Books, ISBN 1891389573
+\end{itemize}
 
 \hypertarget{report-errors}{%
 \section{Report errors}\label{report-errors}}
@@ -116,6 +152,8 @@ Loading\ldots{}
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
 
+Semi-major update for clarity and to fix issues with pdf not showing symbols. Begun 28 June 2022.
+
 Trying to fix legacy errors ready for the year 13th October 2021.
 
 Updated for pdf but introduced errors with sub and superscripts in figure captions 9th October 2020.
@@ -127,13 +165,13 @@ The initial commit of this book is dated 6th September 2020.
 \hypertarget{ch:Intro}{%
 \chapter{Introduction to Photochemistry \& Photophysics}\label{ch:Intro}}
 
-Some context on this course.
+Let us open with some context on this course.
 
-Photochemistry is by definition from IUPAC `the branch of chemistry concerned with the chemical effects of light'\footnote{IUPAC Goldbook, \url{http://goldbook.iupac.org/terms/view/P04588} (accessed July 2020).}. However, in this course we are going to explore beyond just chemical reactions to also examine some of the fundamental photo physics of systems. Photophysics is closely related to what you have previously studied in your first and second years, in that it is a study of the processes of absorption and emission of light and the kinetics of these processes.
+Photochemistry is, by definition from IUPAC, `the branch of chemistry concerned with the chemical effects of light'\footnote{IUPAC Goldbook, \url{http://goldbook.iupac.org/terms/view/P04588} (accessed July 2020).}. However, in this course we are going to focus on and examine some of the fundamental \textbf{photophysics} of system before finally introducing chemical reactions involving light. Photophysics is closely related to what you have previously studied in your first and second years, in that it is a study of the processes of absorption and emission of light and the kinetics of these processes. We will also draw upon your previous studies of quantum mechanics as wavefunctions are vital in our understanding of photophysical processes.
 
 Light is the very reason why there is life on earth, the outstanding beauty of processes such as photosynthesis or vision speak to the power of this branch of chemistry. Photochemistry offers a way for us to `cheat' traditional chemical reactions, in that we no longer need thermal energy to get over an activation barrier, instead we use the energy of a photon. It is only by understanding how we can best utilise the bounteous resource of the sun's light that we as a species can hope to to have a long and fruitful future on this planet.
 
-It is just over 100 years since quantum theory revolutionised our understanding of matter and light, not quite 125 years since the discovery of the electron, but in that time we have achieved wonderful things, things that have revolutionised the way we live. From lasers in cd and blue ray players to their use in scanning bar codes, glow sticks - fun at festivals, essential in emergencies, or more prosaic uses such as sun creams, self cleaning windows or display technology. In this course you will learn about a range of photochemical and photophysical processes that underpin our modern lives and also learn about some of the current challenges and interest in the field.
+It is just over 100 years since quantum theory revolutionised our understanding of matter and light, 125 years since the discovery of the electron, but in that time we have achieved wonderful things, things that have revolutionised the way we live. From lasers in cd and blue ray players to their use in scanning bar codes, glow sticks (fun at festivals, essential in emergencies), or more prosaic uses such as sun creams, self cleaning windows or display technology (where would we be without the phones in our pockets?). In this course you will learn about a range of photophysical and photochemical processes that underpin our modern lives and also learn about some of the current challenges and interests in the field.
 
 \textbf{Spectroscopy}
 
@@ -165,38 +203,24 @@ It is just over 100 years since quantum theory revolutionised our understanding 
   quantum mechanics
 \end{itemize}
 
-\emph{Photophysical processes}
+\textbf{Photophysical processes}
 
-transitions which convert between excited states or between an excited state and a ground state of a molecule
+*transitions which convert between excited states or between an excited state and a ground state of a molecule
 
-\emph{Photochemical processes}
+\textbf{Photochemical processes}
 
-reactions or rearrangements which occur as a consequence of excitation from the ground state
+*reactions or rearrangements which occur as a consequence of excitation from the ground state
 
 \hypertarget{assumed-background-knowledge}{%
 \section{Assumed background knowledge}\label{assumed-background-knowledge}}
 
 The course relies heavily on first and second year kinetics concepts as well as building on the quantum mechanics from second year and some of the spectroscopy you did in first year. Whilst I have done my best to ensure that there is a minimum of non-physical chemistry content required to get the most out of this course if I want to talk about molecules some very basic knowledge from both organic and inorganic chemistry, much of which will at least have been mentioned at `A'-level or IB.
 
-I will talk a lot about σ and π bonding, but this has been covered in quantum mechanics, a double bond has one σ and one π bond. I will also talk about shape and structure, a carbon with only σ bonds is 3 dimensional and tetrahedral, a carbon with 3 σ and 1 π bond is trigonal planar, and one with 2 σ and 2 π bonds is linear.
+I will talk a lot about \(\sigma\) and \(\pi\) bonding, but this has been covered in quantum mechanics, a double bond has one \(\sigma\) and one \(\pi\) bond. I will also talk about shape and structure, a carbon with only \(\sigma\) bonds is 3 dimensional and tetrahedral, a carbon with 3 \(\sigma\) and 1 \(\pi\) bond is trigonal planar, and one with 2 \(\sigma\) and 2 \(\pi\) bonds is linear.
 
 However we need to think about the fact that a molecular orbital exists over a hole molecule. If we reduce bond order overall we change the shape of the molecule. This will be discussed in the absorption (Chapter \ref{ch:Abs}) section of this course.
 
-If you need more help on structure, bonding or metal complexes Chemistry3 is an excellent book to start with, or please ask for help.
-
-I also recommend:
-
-\begin{itemize}
-\tightlist
-\item
-  Principles \& Applications of Photochemistry, Brian Wardle,Wiley, ISBN 0470014938 (available as an ebook from the library).
-\item
-  Photochemistry, Carol E.Wayne \& Richard P.Wayne, OUP (primer), ISBN 0198558864 (a really nice primer well worth the money if you are interested in photochemistry)
-\item
-  Principles of Molecular Photochemistry, Nicholas J.Turro,V. Ramamurthy, J.C. Scaiano, University Science Books, ISBN 1891389573
-\item
-  The book Principles of Fluorescence Spectroscopy (3rd Edition) by Joseph R. Lakowicz (Springer, ISBN 0387312781) may also be useful for the sections on fluorescence.
-\end{itemize}
+If you need more help on structure, bonding or metal complexes Chemistry\textsuperscript{3} is an excellent book to start with, or please ask for help.
 
 \begin{figure}
 
@@ -204,21 +228,30 @@ I also recommend:
 
 }
 
-\caption{The orthogonal electric and magnetic oscillating fields of plan polarised light, propagating along the x-axis. From: [And1mu](https://upload.wikimedia.org/wikipedia/commons/9/99/EM-Wave.gif) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)}\label{fig:EMWave}
+\caption{Light as a wave is made up of orthogonal oscillating electric and magnetic fields. From: [And1mu](https://upload.wikimedia.org/wikipedia/commons/9/99/EM-Wave.gif) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)}\label{fig:EMWave}
 \end{figure}
 
 \hypertarget{sec:Light}{%
 \section{Light}\label{sec:Light}}
 
-As you've already learnt light exhibits properties that have both a wave like and a particle like nature, and light was one of the fundamental pieces that lead towards the quantum theory of the atom. Newton had shown that light from the sun is comprised of a spectrum of colours, we now know that that spectrum goes beyond what we can see with our eyes.
+As you've already learnt light exhibits properties that has both a wave like and particle like nature, and our understanding of light was one of the fundamental pieces that lead towards the quantum theory of the atom. Newton had shown that light from the sun is comprised of a spectrum of colours, we now know that that spectrum goes beyond what we can see with our eyes.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/EMspectrumspectroscopy} \caption{TheThe electromagnetic spectrum of light, frequency and energy are equivalent, so high frequency waves have high energy photons}\label{fig:EMspect}
+\includegraphics[width=1\linewidth]{images/EMspectrumspectroscopy} \caption{The electromagnetic spectrum of light, frequency and energy are equivalent, so high frequency waves have high energy photons}\label{fig:EMspect}
 \end{figure}
 
-In your studies you have already seen how large amounts of the electromagnetic spectrum is used for different spectroscopic techniques, making use of the quantised transitions within molecules. For example, infra-red light has the same energy as the vibrational transitions within molecules. In photochemistry, we are specifically interested in the visible and near UV part of the EM spectra as photons with this energy promote transitions for the valance electrons in the molecules we are interested in.
+In your studies you have already seen how large amounts of the electromagnetic spectrum is used for different spectroscopic techniques, making use of the quantised transitions within molecules. For example, infra-red light has the same energy as the vibrational transitions within molecules. In photochemistry, we are specifically interested in the visible and near UV part of the EM spectrum as photons with this energy promote transitions for the valance electrons in the molecules we are interested in.
 
-It is important never to forget the wave particle duality of light, however for much of photochemistry and photophysics it is perhaps simpler to consider the light as a stream of incident photons.
+It is important never to forget the wave particle duality of light, however for much of photochemistry and photophysics it is perhaps simpler to consider the light as a stream of incident photons, whilst there are classical (wave) models to thing of processes like absorption and emission this set of notes will usually defer to an entirely particle model of absportion or emission of a photon.
+
+\hypertarget{feedback-on-this-resource}{%
+\section*{Feedback on this resource}\label{feedback-on-this-resource}}
+\addcontentsline{toc}{section}{Feedback on this resource}
+
+Loading\ldots{}
+
+\hypertarget{formative-questions-subsecintroqs}{%
+\section{Formative questions \{subsec:introqs\}}\label{formative-questions-subsecintroqs}}
 
 \hypertarget{ch:Abs}{%
 \chapter{Absorption of light}\label{ch:Abs}}
@@ -488,68 +521,36 @@ The greater the amount of conjugation in a molecule the smaller the energy gap b
 
 This fits with the theory you learnt in your quantum mechanics lectures, where you can model the linear conjugated model quite accurately using the particle in a one dimensional box model.
 
-\begin{longtable}[]{@{}llll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
 \caption{\label{tab:lambdaconj} The dependence of maximum absorption wavelength on the increasing length of conjugation is clearly shown by moving along the diene, triene, polyene series. Inclusion of a hetero atom with lone pairs introduces non-bonding, \(n\), electrons into the MO, and a second absorption band \(n \longrightarrow \pi^\ast\) introduced with a lower energy transition.}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\)\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\)\strut
-\end{minipage}\tabularnewline
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\)
+\end{minipage} \\
 \midrule
 \endfirsthead
 \toprule
-\begin{minipage}[b]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\)\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\)\strut
-\end{minipage}\tabularnewline
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\)
+\end{minipage} \\
 \midrule
 \endhead
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-217\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-270 187\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-227\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-\includegraphics{images/octatrienestructure.png}\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-263\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-324 219\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-\includegraphics{images/longene.png}\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-353\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
+& 217 & & 270 187 \\
+& 227 & & \\
+\includegraphics{images/octatrienestructure.png} & 263 & & 324 219 \\
+\includegraphics{images/longene.png} & 353 & & \\
 \bottomrule
 \end{longtable}
 
@@ -580,7 +581,7 @@ Consequently the \(d-d\) transitions, such as the \(t_{2g} \longleftrightarrow e
 
 \}
 
-\textbackslash caption\{The ligand field splitting of the 3d orbitals in a {[}Ti(H\(_2\)O)\$\_6{]}\(^{3+}\) complex the solution is pale purple with a molar extinction coefficient, ε \textasciitilde{} 6.1 M\textsuperscript{−1} cm\(^{−}1\)\}\label{fig:Tisplitting}
+\textbackslash caption\{The ligand field splitting of the 3d orbitals in a {[}Ti(H\(_2\)O)\(_6]\)\^{}\{3+\}\$ complex the solution is pale purple with a molar extinction coefficient, ε \textasciitilde{} 6.1 M\textsuperscript{−1} cm\(^{−}1\)\}\label{fig:Tisplitting}
 \textbackslash end\{figure\}
 
 If we compare the magnitude of of the molar extinction coefficient for a typical \(d-d\) absorption of a transition metal complex with that of a `spin allowed' `Laporte allowed' organic dye molecule we can see the effect of `non allowed' transitions. In table \ref{tab:extcoeff}, the organics, DNA \& the synthetic dye TOTO-1 both have extended conjugated molecular orbitals, and the transitions are from singlet to singlet, an allowed transition.
@@ -594,19 +595,19 @@ Interestingly, permanganate which is relatively highly coloured when compared to
 \begin{longtable}[]{@{}lll@{}}
 \caption{\label{tab:extcoeff} The molar extinction coefficients of a range of molecules, the magnitude is strongly dependent upon the adherence to selection rules, the two organic molecules, DNA bases \& TOTO-1 are both `spin allowed', permanganate is a LMCT which has no selection rules, whereas the final three molecules all fall foul of the Laporte selection rule which states \(\Delta l = \pm 1\). Since these transitions are `forbidden' the molar extinction coefficient is considerably lower than the allowed transitions.}\tabularnewline
 \toprule
-& \(\lambda\)\textsubscript{max} / nm & \(\varepsilon _{\lambda}\) / M\textsuperscript{-1} cm\textsuperscript{-1}\tabularnewline
+& \(\lambda\)\textsubscript{max} / nm & \(\varepsilon _{\lambda}\) / M\textsuperscript{-1} cm\textsuperscript{-1} \\
 \midrule
 \endfirsthead
 \toprule
-& \(\lambda\)\textsubscript{max} / nm & \(\varepsilon _{\lambda}\) / M\textsuperscript{-1} cm\textsuperscript{-1}\tabularnewline
+& \(\lambda\)\textsubscript{max} / nm & \(\varepsilon _{\lambda}\) / M\textsuperscript{-1} cm\textsuperscript{-1} \\
 \midrule
 \endhead
-DNA (per base) & 260 & 6600\tabularnewline
-TOTO-1 & 514 & 117000\tabularnewline
-KMnO\textsubscript{4} & 520 & 1800\tabularnewline
-CuSO\textsubscript{4} & 810 & 20\tabularnewline
-{[}Ti(H\textsubscript{2}O)\textsubscript{6}{]}\textsuperscript{3+} & 500 & 6.1\tabularnewline
-PrCl\textsubscript{3} & 445 & 0.07\tabularnewline
+DNA (per base) & 260 & 6600 \\
+TOTO-1 & 514 & 117000 \\
+KMnO\textsubscript{4} & 520 & 1800 \\
+CuSO\textsubscript{4} & 810 & 20 \\
+{[}Ti(H\textsubscript{2}O)\textsubscript{6}{]}\textsuperscript{3+} & 500 & 6.1 \\
+PrCl\textsubscript{3} & 445 & 0.07 \\
 \bottomrule
 \end{longtable}
 
@@ -851,66 +852,21 @@ Emission transitions that involve a change in spin of the electron, such as from
 
 Table \ref{tab:phototrans} the deactivation pathways from excited states:
 
-\begin{longtable}[]{@{}lll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4286}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2857}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2857}}@{}}
 \caption{\label{tab:phototrans} The excitation and decay pathways in molecules.}\tabularnewline
 \toprule
 \endhead
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-\emph{`Allowed transitions'}\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-Singlet-singlet absorption Singlet-singlet emission\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-fluorescence\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\(S_0 + h \nu \longrightarrow S_1\) \(S_1 \longrightarrow S_0 + h \nu '\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-\emph{`Forbidden transitions'}\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-Singlet-triplet absorption Triplet-singlet emission\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-fluorescence\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\(S_0 + h \nu \longrightarrow T_1\) \(T_1 \longrightarrow S_0 + h \nu ''\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-\emph{`Other transitions'}\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-Internal conversion \strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-(vibrational relaxation) (vibrational relaxation)\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\(S_1 \longrightarrow S_0 + heat\) \(S_1 \longrightarrow T_1 + heat\) \(T_1 \longrightarrow S_0 + heat\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-\emph{Other pathways}\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-Quenching of excited state Chemistry from excited state\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\(S_1 + Q \longrightarrow S_0 + Q +heat\) \(S_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(T_1 + Q \longrightarrow S_0 + Q +heat\) \(T_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(S_1 \longrightarrow\) new/changed molecule\strut
-\end{minipage}\tabularnewline
+\emph{`Allowed transitions'} & & \\
+Singlet-singlet absorption Singlet-singlet emission & fluorescence & \(S_0 + h \nu \longrightarrow S_1\) \(S_1 \longrightarrow S_0 + h \nu '\) \\
+\emph{`Forbidden transitions'} & & \\
+Singlet-triplet absorption Triplet-singlet emission & fluorescence & \(S_0 + h \nu \longrightarrow T_1\) \(T_1 \longrightarrow S_0 + h \nu ''\) \\
+\emph{`Other transitions'} & & \\
+Internal conversion & (vibrational relaxation) (vibrational relaxation) & \(S_1 \longrightarrow S_0 + heat\) \(S_1 \longrightarrow T_1 + heat\) \(T_1 \longrightarrow S_0 + heat\) \\
+\emph{Other pathways} & & \\
+Quenching of excited state Chemistry from excited state & & \(S_1 + Q \longrightarrow S_0 + Q +heat\) \(S_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(T_1 + Q \longrightarrow S_0 + Q +heat\) \(T_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(S_1 \longrightarrow\) new/changed molecule \\
 \bottomrule
 \end{longtable}
 
@@ -1006,86 +962,38 @@ If there is more than one possible deactivation pathway from the excited state i
 \label{eq:QYdef}
 \end{equation}
 
-\begin{longtable}[]{@{}llll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3778}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1778}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1778}}@{}}
 \caption{\label{tab:QYtab} The deactivation pathways of an excited state, with the associated rate constants and quantum yields.}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.33\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.24\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
-Rate of Process\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
-Quantum Yield\strut
-\end{minipage}\tabularnewline
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rate of Process
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Quantum Yield
+\end{minipage} \\
 \midrule
 \endfirsthead
 \toprule
-\begin{minipage}[b]{0.33\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.24\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
-Rate of Process\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
-Quantum Yield\strut
-\end{minipage}\tabularnewline
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rate of Process
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Quantum Yield
+\end{minipage} \\
 \midrule
 \endhead
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Absorption\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(S_0 + h \nu \longrightarrow S_1\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(I\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Fluorescence\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(S_1 \longrightarrow S_0 + h \nu'\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(k_f[S_1]\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(\phi _f\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Internal conversion\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(S_1 \longrightarrow S_0 + \textrm{heat}\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(k_{ic}[S_1]\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(\phi _{ic}\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Intersystem crossing \emph{singlet to triplet}\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(S_1 \longrightarrow T_1 + \textrm{heat}\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(k_{ST}[S_1]\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(\phi _{ST}\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Phosphorescence\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(T_1 \longrightarrow S_0 + h \nu''\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(k_p[T_1]\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(\phi _p\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Intersystem crossing \emph{internal conversion triplet to singlet}\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(T_1 \longrightarrow S_0 + \textrm{heat}\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(k_{TS}[T_1]\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(\phi _{TS}\)\strut
-\end{minipage}\tabularnewline
+Absorption & \(S_0 + h \nu \longrightarrow S_1\) & \(I\) & \\
+Fluorescence & \(S_1 \longrightarrow S_0 + h \nu'\) & \(k_f[S_1]\) & \(\phi _f\) \\
+Internal conversion & \(S_1 \longrightarrow S_0 + \textrm{heat}\) & \(k_{ic}[S_1]\) & \(\phi _{ic}\) \\
+Intersystem crossing \emph{singlet to triplet} & \(S_1 \longrightarrow T_1 + \textrm{heat}\) & \(k_{ST}[S_1]\) & \(\phi _{ST}\) \\
+Phosphorescence & \(T_1 \longrightarrow S_0 + h \nu''\) & \(k_p[T_1]\) & \(\phi _p\) \\
+Intersystem crossing \emph{internal conversion triplet to singlet} & \(T_1 \longrightarrow S_0 + \textrm{heat}\) & \(k_{TS}[T_1]\) & \(\phi _{TS}\) \\
 \bottomrule
 \end{longtable}
 
@@ -1130,17 +1038,17 @@ The integrated emission intensity, \(\int{I}\textrm{d}\bar \nu\), of the unknown
 \begin{longtable}[]{@{}lllll@{}}
 \caption{\label{tab:actinometer} The photophysical details of well characterised actinometers.}\tabularnewline
 \toprule
-Reference & Solvent & λ\textsubscript{ex}/nm & Φ\textsubscript{em} & λ\textsubscript{em,max} / nm\tabularnewline
+Reference & Solvent & λ\textsubscript{ex}/nm & Φ\textsubscript{em} & λ\textsubscript{em,max} / nm \\
 \midrule
 \endfirsthead
 \toprule
-Reference & Solvent & λ\textsubscript{ex}/nm & Φ\textsubscript{em} & λ\textsubscript{em,max} / nm\tabularnewline
+Reference & Solvent & λ\textsubscript{ex}/nm & Φ\textsubscript{em} & λ\textsubscript{em,max} / nm \\
 \midrule
 \endhead
-quinine sulfate & 0.1 M H\textsubscript{2}SO\textsubscript{4} & 350 & 0.577 & 444\tabularnewline
-fluorescein & 0.1 M H\textsubscript{2}SO\textsubscript{4} & 496 & 0.95 & 521\tabularnewline
-rhodamine 6G & ethanol & 488 & 0.94 & 530\tabularnewline
-cresyl violet & methanol & 540 & 0.54 & 622\tabularnewline
+quinine sulfate & 0.1 M H\textsubscript{2}SO\textsubscript{4} & 350 & 0.577 & 444 \\
+fluorescein & 0.1 M H\textsubscript{2}SO\textsubscript{4} & 496 & 0.95 & 521 \\
+rhodamine 6G & ethanol & 488 & 0.94 & 530 \\
+cresyl violet & methanol & 540 & 0.54 & 622 \\
 \bottomrule
 \end{longtable}
 
@@ -1181,16 +1089,16 @@ Non radiative decay become increasingly unfavourable as the energy gaps become b
 \begin{longtable}[]{@{}llllll@{}}
 \caption{\label{tab:actinometer} The lifetime of the excited state increases dramatically as the energy gap between the ground and excited state increases due to a decrease in internal conversion. The quantum yield of emission increases as the rate constant for internal conversion decreases..}\tabularnewline
 \toprule
-& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ nw & Φ\textsubscript{em}\tabularnewline
+& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ nw & Φ\textsubscript{em} \\
 \midrule
 \endfirsthead
 \toprule
-& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ nw & Φ\textsubscript{em}\tabularnewline
+& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ nw & Φ\textsubscript{em} \\
 \midrule
 \endhead
-{[}Os(phen)\textsubscript{3}{]}\textsuperscript{2+} & 650 & 720 & 0.186 & 260 & 0.016\tabularnewline
-{[}Os(phen)\textsubscript{2}(dppene){]}\textsuperscript{2+} & 455 & 609 & 0.69 & 1830 & 0.138\tabularnewline
-{[}Os(phen)(dppene)\textsubscript{2}{]}\textsuperscript{2+} & 400 & 530 & 0.761 & 3600 & 0.518\tabularnewline
+{[}Os(phen)\textsubscript{3}{]}\textsuperscript{2+} & 650 & 720 & 0.186 & 260 & 0.016 \\
+{[}Os(phen)\textsubscript{2}(dppene){]}\textsuperscript{2+} & 455 & 609 & 0.69 & 1830 & 0.138 \\
+{[}Os(phen)(dppene)\textsubscript{2}{]}\textsuperscript{2+} & 400 & 530 & 0.761 & 3600 & 0.518 \\
 \bottomrule
 \end{longtable}
 
@@ -1211,19 +1119,19 @@ Consequently intersystem crossing is considerably more efficient in molecules wh
 \begin{longtable}[]{@{}llll@{}}
 \caption{\label{tab:rateST} The rates of intersystem crossing for a range of organic chromophores illustrating El Sayed's rule. When orbitals are listed as (for example) π,π* then it is looking at the pair of electrons in the highest orbitals (the valence HOMO electrons in the ground state), upon excitation an electron is excited from the π to the π* orbital.}\tabularnewline
 \toprule
-& transition & transition type & k\textsubscript{ST} / s\textsuperscript{−1}\tabularnewline
+& transition & transition type & k\textsubscript{ST} / s\textsuperscript{−1} \\
 \midrule
 \endfirsthead
 \toprule
-& transition & transition type & k\textsubscript{ST} / s\textsuperscript{−1}\tabularnewline
+& transition & transition type & k\textsubscript{ST} / s\textsuperscript{−1} \\
 \midrule
 \endhead
-anthracene & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (π,π*) & forbidden & 1.4 × 10\textsuperscript{8}\tabularnewline
-acetone & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 5 × 10\textsuperscript{8}\tabularnewline
-benzil & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 5 × 10\textsuperscript{8}\tabularnewline
-biacetyl & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 7 × 10\textsuperscript{7}\tabularnewline
-9-acetoanthracence & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (n,π*) & allowed & \textasciitilde10\textsuperscript{10}\tabularnewline
-benzophenone & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (n,π*) & allowed & \textasciitilde10\textsuperscript{11}\tabularnewline
+anthracene & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (π,π*) & forbidden & 1.4 × 10\textsuperscript{8} \\
+acetone & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 5 × 10\textsuperscript{8} \\
+benzil & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 5 × 10\textsuperscript{8} \\
+biacetyl & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 7 × 10\textsuperscript{7} \\
+9-acetoanthracence & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (n,π*) & allowed & \textasciitilde10\textsuperscript{10} \\
+benzophenone & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (n,π*) & allowed & \textasciitilde10\textsuperscript{11} \\
 \bottomrule
 \end{longtable}
 
@@ -1253,14 +1161,14 @@ To support the material in this section it is suggested you read chapters 3 \& 4
 
 \begin{longtable}[]{@{}lll@{}}
 \toprule
-Compound & k\textsubscript{p} / s\textsuperscript{−1} & k\textsubscript{ST} / s\textsuperscript{−1}\tabularnewline
+Compound & k\textsubscript{p} / s\textsuperscript{−1} & k\textsubscript{ST} / s\textsuperscript{−1} \\
 \midrule
 \endhead
-naphthalene & 0.05 & 0.39\tabularnewline
-1-fluoronaphthalene & 0.23 & 0.42\tabularnewline
-1-chloronaphthalene & 1.10 & 2.35\tabularnewline
-1-bromonaphthalene & 13.5 & 36.5\tabularnewline
-1-iodonaphthalene & 190 & 310\tabularnewline
+naphthalene & 0.05 & 0.39 \\
+1-fluoronaphthalene & 0.23 & 0.42 \\
+1-chloronaphthalene & 1.10 & 2.35 \\
+1-bromonaphthalene & 13.5 & 36.5 \\
+1-iodonaphthalene & 190 & 310 \\
 \bottomrule
 \end{longtable}
 
@@ -1370,19 +1278,13 @@ The photophysical deactivation pathways described above (emission, internal conv
 
 Table \ref{tab:phototrans}, part of which is repeated below, details all of the possible decay pathways from an excited state. Quenching competes with other processes, and consequently reduces the lifetime and yield of emission processes.
 
-\begin{longtable}[]{@{}ll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
 \toprule
 \endhead
-\begin{minipage}[t]{0.56\columnwidth}\raggedright
-\emph{Other pathways}\strut
-\end{minipage} & \begin{minipage}[t]{0.38\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.56\columnwidth}\raggedright
-Quenching of excited state\strut
-\end{minipage} & \begin{minipage}[t]{0.38\columnwidth}\raggedright
-\(S_1 + Q \longrightarrow S_0 + Q +heat\) \(S_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(T_1 + Q \longrightarrow S_0 + Q +heat\) \(T_1 + Q \longrightarrow S_0 + Q^\ast +heat\)\strut
-\end{minipage}\tabularnewline
+\emph{Other pathways} & \\
+Quenching of excited state & \(S_1 + Q \longrightarrow S_0 + Q +heat\) \(S_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(T_1 + Q \longrightarrow S_0 + Q +heat\) \(T_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \\
 \bottomrule
 \end{longtable}
 
@@ -2073,16 +1975,16 @@ The assymetric cyanine dye YO-Pro-1 has been shown to fluoresce when bound to DN
 \begin{longtable}[]{@{}llll@{}}
 \caption{\label{tab:YOquench} The normalised fluorescence intensity at λ\_max\_ and the lifetimes and normlised lifetimes for YO-Pro-1 when bound to a 15-mer oligonucleotide containing a varying number of modified lesions. The concentration of YO-Pro-1 was such that statistically there was no more than one dye bound per oligonucleotide.}\tabularnewline
 \toprule
-& Normalised Fluorescence & \(\tau\) / ns & \(\tau / \tau_0\)\tabularnewline
+& Normalised Fluorescence & \(\tau\) / ns & \(\tau / \tau_0\) \\
 \midrule
 \endfirsthead
 \toprule
-& Normalised Fluorescence & \(\tau\) / ns & \(\tau / \tau_0\)\tabularnewline
+& Normalised Fluorescence & \(\tau\) / ns & \(\tau / \tau_0\) \\
 \midrule
 \endhead
-no modified bases & 1 & 2.80 & 1\tabularnewline
-1 8-oxo-G & 0.558 & 2.38 & 0.85\tabularnewline
-4 8-oxo-G & 0.169 & 1.31 & 0.47\tabularnewline
+no modified bases & 1 & 2.80 & 1 \\
+1 8-oxo-G & 0.558 & 2.38 & 0.85 \\
+4 8-oxo-G & 0.169 & 1.31 & 0.47 \\
 \bottomrule
 \end{longtable}
 
