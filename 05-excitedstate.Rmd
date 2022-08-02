@@ -52,10 +52,11 @@ Exciplexes are common in organic solvent as non polar solvents are not good at s
 Please see video above in Section \@ref(sec:excimers) for a review of this topic (timecode 4m52s).
 
 
-## Before Completing this Section
+## Before Completing this Section {#sec:beforeex}
+
 To support the material in this section it is suggested you read pages 90-96 of Wardle ‘Principles and Application of Photochemistry’.
 
-## Self Assessment Questions
+## Self Assessment Questions {#sec:saqex}
 
 1. Low concentration solutions of pyrene in ethanol have a characteristic violet fluorescence emission (spectrum labeled 4), however upon increasing the concentration this emission becomes sky blue (spectra 3,2,1 as increasing concentration of pyrene). Explain the origin of this shift and also the changing characteristic of the emission spectrum.
 
@@ -73,7 +74,7 @@ knitr::include_graphics("images/pyrenespec.png")
 
 
 
-## Self Assessment Question Brief Answers
+## Self Assessment Question Brief Answers {#sec:saqansex}
 
 1. At low concentrations the maximum emission occurs around 400 nm, with very little emission at wavelengths longer than 440 nm, this accounts for the violet emission. At higher concentrations a symmetric (gaussian profile) band is seen to grow in centred around 480 nm (blue) with a decreasing monomer emission between 360 & 440 nm. The lack of structure and the increasing in intensity of this band with increasing concentration of chromophore indicates the presence of a excimer emission from an excited state pyrene dimer. The fine structure in the monomer band is due to relaxation from the $S_1$, v’ = 0 lowest energy vibrational state of the excited state to a variety of vibrational levels in the ground state, v = 0, 1, 2, 3… with the highest energy emission ~ 375 nm accounting for the $S_1$ v’ = 0 → $S_0$ v = 0 state, with the next peak around 385 nm $S_1$ v’ = 0 → $S_0$ v = 1 transition, *etc*. The Gaussian band is lower in energy than the monomer emission due to the stabilisation of dimerising in the excimer complex, the lack of structure is due to the ground state of the excimer being the repulsive non-bonding regime (figure \@ref(fig:excimer)).
 

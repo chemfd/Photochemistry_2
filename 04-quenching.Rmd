@@ -207,7 +207,7 @@ Chemically singlet oxygen formation is very interesting as it is extremely react
 
 <div style="text-align: center;"><iframe width="480" height="360" src="https://www.youtube.com/embed/2z6sm2G5GS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-## Before Completing this Section
+## Before Completing this Section {#sec:beforequench}
 
 To support the material in this section it is suggested you read chapter 6 of Wardle ‘Principles and Application of Photochemistry’.
 

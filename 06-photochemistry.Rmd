@@ -1,4 +1,4 @@
-# Photochemistry
+# Photochemistry {#ch:photochemistry}
 
 ### Learning Objectives {#sec:photochemLOs}
 
@@ -227,7 +227,7 @@ knitr::include_graphics("images/Tdimer.png")
 
 Using a slightly more targeted approach a number of molecules have been developed for use in photodynamic therapy for treatment of conditions such as cancer. Traditional chemotherapies make use of the higher metabolic rate of cancerous cells and a generally not very specific, which is the reason for the large number of side effects. Photodynamic therapy hopes to use a drug which is completely non toxic in the ‘dark state’ but upon absorption of a photon the molecule becomes highly reactive to either DNA or proteins. Since light can be easily directed only the treated area is generates toxins, however this means that only accessible regions such skin and lungs may be treated. An ideal photodynamic agent will be blue (have a red absorption) so that the light may be transmitted through the skin and blood vessels and will be highly active. Cells have a number of ‘anti oxidant’ repair mechanisms and so damage has to be significant so as to either stop cell replication or cause apoptosis.
 
-## Before Completing this Section
+## Before Completing this Section {#sec:beforephoto}
 
 To support the material in this section it is suggested you read chapters 8 & 12 of Wardle ‘Principles and Application of Photochemistry’.
 

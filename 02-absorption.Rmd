@@ -15,7 +15,7 @@ At the end of this section you should be able to:
 * Explain some of the factors which affect absorption
 
 
-There is a Concept Bite video in Section \@ref(sec:before1) which summarises much of this content.
+There is a Concept Bite video in Section \@ref(sec:beforeabs) which summarises much of this content.
 
 
 ## Introduction {#sec:AbsIntro}
@@ -37,6 +37,7 @@ knitr::include_graphics("images/Rhodamine6GAbsEm.png")
 The empirical equation (equation \@ref(eq:BeerLambert), figure \@ref(fig:BeerLambert)) implies that the probability of a photon being absorbed at any point is the same (much like first order kinetics), and the amount of the total absorption depends upon the the concentration of the sample, c, and the ‘path length’, l. 
 
 The amount of absorbance, A, is dependent upon the wavelength of the incident light, and the constant of proportionality, $\varepsilon$ (here called the molar extinction coefficient), is consequently also wavelength dependent.
+
 \begin{equation}
 \log \frac{I_0}{I}=A=\varepsilon cl
 (\#eq:BeerLambert)
@@ -329,7 +330,7 @@ Another major factor that can affect the absorption of a sample are interactions
 knitr::include_graphics("images/DNAmelt.png")
 ```
 
-## Before Completing this Section {#sec:before1}
+## Before Completing this Section {#sec:beforeabs}
 
 <iframe width="656" height="369" src="https://www.youtube.com/embed/PiXi74luVvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

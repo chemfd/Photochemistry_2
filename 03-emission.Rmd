@@ -253,7 +253,7 @@ Table: (\#tab:rateST) The rates of intersystem crossing for a range of organic c
 | 9-acetoanthracence | S~1~ (π,π\*) ⟶ T~1~ (n,π*) | allowed | ~10^10^ |
 | benzophenone | S~1~ (π,π\*) ⟶ T~1~ (n,π*) | allowed | ~10^11^ |
 
-## Before Completing this Section
+## Before Completing this Section {#sec:beforeem}
 
 To support the material in this section it is suggested you read chapters 3 & 4 of Wardle ‘Principles and Application of Photochemistry’.
 
