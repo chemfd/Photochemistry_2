@@ -2,6 +2,7 @@ fig:EMWave
 fig:EMspect
 fig:HAbsEm
 fig:RhoAbsEm
+eq:BeerLambert
 fig:BeerLambert
 fig:AbsStimEm
 eq:Abs
@@ -44,6 +45,7 @@ fig:fluorlifetime
 eq:fluorlifetime
 tab:rateST
 fig:stilbeneindene
+eq:QYIC
 eq:QYST
 eq:QYTS
 eq:SternVolmer
@@ -102,6 +104,7 @@ report-errors
 ch:Intro
 assumed-background-knowledge
 sec:Light
+formative-questions-subsecintroqs
 ch:Abs
 sec:AbsLOs
 sec:AbsIntro
