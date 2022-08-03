@@ -1,0 +1,66 @@
+--- 
+title: "Photochemistry and Photophysics"
+author: "Fiona Dickinson"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: chemfd/photochemistry_2
+description: "Photochemistry lecture notes for Distance Learning in Chemistry at Bath CH30217"
+---
+# Welcome {-}
+
+The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I have also been able to embed short concept bite videos to further describe some of the topics. Further you can access the notes in a format that suits you:
+
+- download the notes (top bar on the screen) (either pdf or epub) to view offline (videos will not download).
+- or change the way this document appears for ease of reading (A button in toolbar), changing the font, font size and background colour.
+
+The document is also searchable (magnifying glass in header bar) and you can access or remove the navigation list by clicking on the four horizontal lines in the header bar.
+
+This is a relatively new format of the document and is easily editable, therefore if you do find any typing errors, areas with lack of clarity, or other errors please let me know. I will update the document accordingly and update the version history below. If there are any major changes I will inform you as a class. I can and will also address areas where you feel there isn't enough detail, just use the same form below.
+
+## Additional Resources {#sec:AddnRes}
+
+Whilst this resource is designed to stand alone, you will find it beneficial to read around the subject or else listen to the concept bites. I refer to the book by Wardle frequently and you have access to it digitally *via* the library, although there are a number of excellent photochemistry textbooks which I've listed below.
+
+Whilst this is designed to be independent study it does not mean that you are alone in your learning. Please feel free to contact me for help or feedback (using Teams or email) and I can also help facilitate the formation of study groups. The value of peer interactions when learning cannot be overstated, find yourself a study buddy and help each other with your misconceptions and difficulties.
+
+### Reading list {-}
+
+Resources marked with a * have online access.
+
+- *[Photochemistry](https://bibliu.com/app/#/view/books/9780198558866/epub/html/toc.html), Carol E. Wayne & Richard P. Wayne. Oxford: OUP, 1996. Oxford Science Publications. ISBN 0198558864
+
+- [Photochemistry](https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=44BAT_ALMA_DS2131580390002761&context=L&vid=44BAT_VU1&lang=en_US&search_scope=CSCOP_44BAT_DEEP&adaptor=Local%20Search%20Engine&tab=local&query=any,contains,photochemistry&sortby=rank&facet=rtype,include,books&offset=0&pcAvailability=false) Calvert, J G., and J N. Pitts. Photochemistry.
+
+- *[Principles and Applications of Photochemistry](https://ebookcentral.proquest.com/lib/bath/detail.action?docID=470772&pq-origsite=primo) Brian Wardle, Wiley, 2009. ISBN 0470014938
+
+- *[Photochemistry and Photophysics: Concepts, Research, Applications](https://ebookcentral.proquest.com/lib/bath/detail.action?pq-origsite=primo&docID=1662200) Balzani, Vincenzo, Paola Ceroni, and Alberto Juris. P. Weinheim, Germany: Wiley-VCH, 2014.
+
+- [Modern Molecular Photochemistry of Organic Molecules](https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=44BAT_ALMA_DS2129513080002761&context=L&vid=44BAT_VU1&lang=en_US&search_scope=CSCOP_44BAT_DEEP&adaptor=Local%20Search%20Engine&tab=local&query=any,contains,%22modern%20molecular%20photochemistry%22%20turro&offset=0&pcAvailability=false) Turro, N.J., Ramamurthy, V., and Scaiano, J. C. Modern Molecular Photochemistry of Organic Molecules. Sausalito, Calif.: U Science, 2010.
+
+- *[Principles of Fluorescence Spectroscopy (3rd Edition)](https://link.springer.com/book/10.1007/978-0-387-46312-4) Joseph R. Lakowicz, Springer, 2006. ISBN 0387312781
+
+- *[Principles of Molecular Photochemistry: An Introduction](https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=44BAT_ALMA_DS2129552010002761&context=L&vid=44BAT_VU1&lang=en_US&search_scope=CSCOP_44BAT_DEEP&adaptor=Local%20Search%20Engine&tab=local&query=any,contains,principles%20of%20molecular%20photochemistry%20ramamurthy&offset=0&pcAvailability=false), Nicholas J.Turro,V. Ramamurthy, J.C. Scaiano, University Science Books, ISBN 1891389573
+
+## Report errors
+
+If you spot any errors or areas of lack of clarity, please message me in Teams or preferably report on the error log below:
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc83b-C0FsgDr5eQxvT-2NWwEtvOEwYU1WbLE4j53wWfUDIXQ/viewform?embedded=true" width="640" height="1242" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+## Version history {-}
+
+Semi-major update for clarity and to fix issues with pdf not showing symbols. Begun 28 June 2022.
+
+Trying to fix legacy errors ready for the year 13th October 2021.
+
+Updated for pdf but introduced errors with sub and superscripts in figure captions 9th October 2020.
+
+Updated with learning outcomes for each chapter and updated content in chapter 6. 8th September 2020.
+
+The initial commit of this book is dated 6th September 2020.
+
