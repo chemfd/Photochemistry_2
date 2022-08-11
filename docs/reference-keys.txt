@@ -1,5 +1,6 @@
 fig:EMWave
 fig:EMspect
+fig:energylevels
 fig:HAbsEm
 fig:RhoAbsEm
 eq:BeerLambert
@@ -104,7 +105,8 @@ report-errors
 chIntro
 assumed-background-knowledge
 sec:Light
-formative-questions-subsecintroqs
+subsec:energylevels
+subsec:introqs
 chAbs
 sec:AbsLOs
 sec:AbsIntro

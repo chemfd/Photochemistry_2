@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.16)  3 AUG 2022 14:08
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.16)  11 AUG 2022 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1105,104 +1105,113 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--231
 File: images/EMspectrumspectroscopy.png Graphic file (type bmp)
 <images/EMspectrumspectroscopy.png>
 [9]
+File: images/energylevels.png Graphic file (type bmp)
+<images/energylevels.png>
+
 Overfull \hbox (24.08673pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 10 \TU/lmr/m/sl/10 CHAPTER 1.  INTRODUCTION TO PHOTOCHEMISTRY & 
 PHOTOPHYSICS
  []
 
-[10]
+[10] [11]
+Overfull \hbox (24.08673pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 12 \TU/lmr/m/sl/10 CHAPTER 1.  INTRODUCTION TO PHOTOCHEMISTRY & 
+PHOTOPHYSICS
+ []
+
+[12
+
+]
 Chapter 2.
 File: images/HAbsEm.png Graphic file (type bmp)
 <images/HAbsEm.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
 []\TU/lmr/m/n/10 Figure 2.1: []The absorption (top) and emission (bottom)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
 \TU/lmr/m/n/10 spectra of hydrogen showing the very narrow band fea-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
 \TU/lmr/m/n/10 tures, [image](http://montessorimuddle.org/2012/02/01/emission-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
 \TU/lmr/m/n/10 spectra-how-atoms-emit-and-absorb-light/) adapted from [Adrig-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
 \TU/lmr/m/n/10 nola](https://commons.wikimedia.org/wiki/User:Adrignola) license
 d under
  []
 
 File: images/Rhodamine6GAbsEm.png Graphic file (type bmp)
 <images/Rhodamine6GAbsEm.png>
-[11
-
-] [12]
+[13] [14]
 File: images/BeerLambert.pdf Graphic file (type pdf)
 <use images/BeerLambert.pdf>
-[13]
+[15]
 File: images/AbsStimEm.png Graphic file (type bmp)
 <images/AbsStimEm.png>
-[14]
+[16]
 Missing character: There is no ω in font [lmroman10-regular]:mapping=tex-text;!
-[15] [16]
+[17] [18]
 File: images/Butadiene.png Graphic file (type bmp)
 <images/Butadiene.png>
 File: images/FrankCondon.png Graphic file (type bmp)
 <images/FrankCondon.png>
 
-Underfull \hbox (badness 1783) in paragraph at lines 478--478
+Underfull \hbox (badness 1783) in paragraph at lines 496--496
 \TU/lmr/m/n/10 the ‘overlap’ of the wave functions of ground and each excited s
 tate.
  []
 
 
-Underfull \hbox (badness 4316) in paragraph at lines 478--478
+Underfull \hbox (badness 4316) in paragraph at lines 496--496
 \TU/lmr/m/n/10 Franck-Condon Diagram (https://commons.wikimedia.org/wiki/File:F
 ranck-
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 478--478
+Underfull \hbox (badness 2662) in paragraph at lines 496--496
 \TU/lmr/m/n/10 Condon-diagram.png). From Wikimedia Commons, created by [Mark
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--478
+Underfull \hbox (badness 10000) in paragraph at lines 496--496
 \TU/lmr/m/n/10 M. Somoza](http://www.gnu.org/licenses/fdl-1.3.html), CC-BY-SA-
  []
 
-[17] [18] [19]
+[19] [20] [21]
 File: images/Anthracene.png Graphic file (type bmp)
 <images/Anthracene.png>
-[20]
+[22]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 510.
+(Font)              scaled to size 14.4pt on input line 528.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 510.
+(Font)              scaled to size 14.40152pt on input line 528.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 510.
+(Font)              scaled to size 14.39845pt on input line 528.
 File: images/nPiSigmaenergylevels.png Graphic file (type bmp)
 <images/nPiSigmaenergylevels.png>
 File: images/octatrienestructure.png Graphic file (type bmp)
 <images/octatrienestructure.png>
 File: images/longene.png Graphic file (type bmp)
 <images/longene.png>
-[21]
+[23]
 File: images/Ti3splitting.png Graphic file (type bmp)
 <images/Ti3splitting.png>
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
-[22]
+[24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[23]
+[25]
 File: images/Hbondingen.png Graphic file (type bmp)
 <images/Hbondingen.png>
 Missing character: There is no σ in font [lmroman10-regular]:mapping=tex-text;!
@@ -1214,7 +1223,7 @@ Missing character: There is no σ in font [lmroman10-regular]:mapping=tex-text;!
 
 Underfull \vbox (badness 2781) has occurred while \output is active []
 
-[24] [25]
+[26] [27]
 File: images/CS2.png Graphic file (type bmp)
 <images/CS2.png>
 Missing character: There is no ⊥ in font [lmroman10-regular]:mapping=tex-text;!
@@ -1226,157 +1235,157 @@ File: images/PhenRubpy3.png Graphic file (type bmp)
 
 Underfull \vbox (badness 2343) has occurred while \output is active []
 
-[26]
+[28]
 File: images/Solvatochromism.png Graphic file (type bmp)
 <images/Solvatochromism.png>
 File: images/DNAmelt.png Graphic file (type bmp)
 <images/DNAmelt.png>
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-[27] [28] [29] [30]
+[29] [30] [31] [32]
 Missing character: There is no μ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no μ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no μ in font [lmroman7-regular]:mapping=tex-text;!
 Missing character: There is no μ in font [lmroman5-regular]:mapping=tex-text;!
-[31] [32
+[33] [34
 
 ]
 Chapter 3.
-[33]
+[35]
 File: images/Jablonski.png Graphic file (type bmp)
 <images/Jablonski.png>
-[34] [35]
+[36] [37]
 File: images/anthracenekasha.png Graphic file (type bmp)
 <images/anthracenekasha.png>
 File: images/stokesspectrum.png Graphic file (type bmp)
 <images/stokesspectrum.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--905
+Underfull \hbox (badness 10000) in paragraph at lines 923--923
 []\TU/lmr/m/n/10 Figure 3.3: []The absorption and emission spectra of rhodamine
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--905
+Underfull \hbox (badness 10000) in paragraph at lines 923--923
 \TU/lmr/m/n/10 6G showing the Stokes shift of the two spectra.[Data from
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 905--905
+Underfull \hbox (badness 1502) in paragraph at lines 923--923
 \TU/lmr/m/n/10 [OMLC](https://omlc.org/spectra/PhotochemCAD/html/083.html), acc
 essed
  []
 
-[36]
+[38]
 File: images/stokesenergy.png Graphic file (type bmp)
 <images/stokesenergy.png>
-[37]
+[39]
 File: images/azulene.png Graphic file (type bmp)
 <images/azulene.png>
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-[38] [39] [40]
+[40] [41] [42]
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-[41]
+[43]
 File: images/fluorlifetime.png Graphic file (type bmp)
 <images/fluorlifetime.png>
-[42]
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-[43]
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 [44]
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
+[45]
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+[46]
 File: images/stilbeneindene.png Graphic file (type bmp)
 <images/stilbeneindene.png>
-[45] [46] [47] [48
+[47] [48] [49] [50
 
 ]
 Chapter 4.
-[49]
+[51]
 Missing character: There is no η in font [lmroman10-regular]:mapping=tex-text;!
-[50] [51]
+[52] [53]
 File: images/forster.png Graphic file (type bmp)
 <images/forster.png>
 Missing character: There is no κ in font [lmroman10-regular]:mapping=tex-text;!
 File: images/overlapintegral.png Graphic file (type bmp)
 <images/overlapintegral.png>
-[52] [53]
+[54] [55]
 File: images/forsterdistance.png Graphic file (type bmp)
 <images/forsterdistance.png>
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-[54]
+[56]
 File: images/Dexter.png Graphic file (type bmp)
 <images/Dexter.png>
-[55]
+[57]
 File: images/triplettriplet.png Graphic file (type bmp)
 <images/triplettriplet.png>
 File: images/O2.png Graphic file (type bmp)
 <images/O2.png>
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-[56] [57]
+[58] [59]
 File: images/quenchintensityconc.png Graphic file (type bmp)
 <images/quenchintensityconc.png>
 File: images/O2quench.png Graphic file (type bmp)
 <images/O2quench.png>
-[58] [59] [60
+[60] [61] [62
 
 ]
 Chapter 5.
-[61]
+[63]
 File: images/excimer.png Graphic file (type bmp)
 <images/excimer.png>
 File: images/pyreneexcimer.png Graphic file (type bmp)
 <images/pyreneexcimer.png>
-[62]
+[64]
 File: images/exciplex.png Graphic file (type bmp)
 <images/exciplex.png>
 File: images/exciplexenergy.png Graphic file (type bmp)
 <images/exciplexenergy.png>
-[63]
+[65]
 File: images/pyrenespec.png Graphic file (type bmp)
 <images/pyrenespec.png>
 File: images/pyrenespec.png Graphic file (type bmp)
 <images/pyrenespec.png>
-[64] [65] [66
+[66] [67] [68
 
 ]
 Chapter 6.
@@ -1384,19 +1393,19 @@ Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 File: images/retinal.png Graphic file (type bmp)
 <images/retinal.png>
-[67]
+[69]
 File: images/cistransstilbene.pdf Graphic file (type pdf)
 <use images/cistransstilbene.pdf>
-[68]
+[70]
 File: images/cisquench.png Graphic file (type bmp)
 <images/cisquench.png>
-[69]
+[71]
 File: images/donoret.png Graphic file (type bmp)
 <images/donoret.png>
 File: images/acceptoret.png Graphic file (type bmp)
 <images/acceptoret.png>
 Missing character: There is no ω in font [lmroman10-regular]:mapping=tex-text;!
-[70] [71]
+[72] [73]
 File: images/elecreorg.png Graphic file (type bmp)
 <images/elecreorg.png>
 File: images/electransreorg.png Graphic file (type bmp)
@@ -1405,48 +1414,48 @@ File: images/reorgen.png Graphic file (type bmp)
 <images/reorgen.png>
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-[72]
+[74]
 File: images/distdepend.png Graphic file (type bmp)
 <images/distdepend.png>
 Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
-[73]
+[75]
 File: images/marcus.png Graphic file (type bmp)
 <images/marcus.png>
-[74]
+[76]
 File: images/marcusinverted.png Graphic file (type bmp)
 <images/marcusinverted.png>
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-[75]
+[77]
 File: images/YOquench.png Graphic file (type bmp)
 <images/YOquench.png>
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-[76] [77]
+[78] [79]
 File: images/DNAbases.png Graphic file (type bmp)
 <images/DNAbases.png>
 File: images/Tdimer.png Graphic file (type bmp)
 <images/Tdimer.png>
-[78] [79]
+[80] [81]
 No file PhotochemistryandPhotophysics.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2068.
-[80]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2068.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2086.
+[82]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2086.
 (./PhotochemistryandPhotophysics.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2068.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2068.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2086.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2086.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 28017 strings out of 492916
- 510636 string characters out of 6133345
- 746858 words of memory out of 5000000
- 31736 multiletter control sequences out of 15000+600000
+ 28024 strings out of 492916
+ 510760 string characters out of 6133345
+ 747160 words of memory out of 5000000
+ 31742 multiletter control sequences out of 15000+600000
  539733 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,11n,115p,1265b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PhotochemistryandPhotophysics.pdf (80 pages).
+Output written on PhotochemistryandPhotophysics.pdf (82 pages).
