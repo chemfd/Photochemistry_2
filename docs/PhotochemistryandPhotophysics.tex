@@ -33,14 +33,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={Photochemistry and Photophysics},
-  pdfauthor={Fiona Dickinson},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -81,10 +73,18 @@
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Photochemistry and Photophysics},
+  pdfauthor={Fiona Dickinson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
 
 \title{Photochemistry and Photophysics}
 \author{Fiona Dickinson}
-\date{2022-08-11}
+\date{2022-12-21}
 
 \begin{document}
 \maketitle
@@ -255,7 +255,7 @@ One of the consequences of quantum theory is that energy levels within atoms and
 
 }
 
-\caption{Molecules have a number of different energy levels over which the internal energy of a molecule is distributed. Vibrational energy levels are essentially a continuum, however rotational vibrational and electronic levels all have measurable transitions.}\label{fig:energylevels}
+\caption{Molecules have a number of different energy levels over which the internal energy of a molecule is distributed. Translational energy levels are essentially a continuum, however rotational vibrational and electronic levels all have measurable transitions.}\label{fig:energylevels}
 \end{figure}
 
 As you have seen in figure \ref{fig:EMspect} these transitions between these energy levels correspond to different parts of the electromagnetic spectrum, however the presence of translational, rotational and vibrational energy levels also has an effect on the transitions between electronic energy levels.
@@ -546,7 +546,7 @@ This fits with the theory you learnt in your quantum mechanics lectures, where y
   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
 \caption{\label{tab:lambdaconj} The dependence of maximum absorption wavelength on the increasing length of conjugation is clearly shown by moving along the diene, triene, polyene series. Inclusion of a hetero atom with lone pairs introduces non-bonding, \(n\), electrons into the MO, and a second absorption band \(n \longrightarrow \pi^\ast\) introduced with a lower energy transition.}\tabularnewline
-\toprule
+\toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 \(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\)
@@ -554,9 +554,9 @@ This fits with the theory you learnt in your quantum mechanics lectures, where y
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 \(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\)
 \end{minipage} \\
-\midrule
+\midrule()
 \endfirsthead
-\toprule
+\toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 \(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\)
@@ -564,13 +564,13 @@ This fits with the theory you learnt in your quantum mechanics lectures, where y
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 \(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\)
 \end{minipage} \\
-\midrule
+\midrule()
 \endhead
 & 217 & & 270 187 \\
 & 227 & & \\
 \includegraphics{images/octatrienestructure.png} & 263 & & 324 219 \\
 \includegraphics{images/longene.png} & 353 & & \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{sec:selectionrules}{%
@@ -613,13 +613,13 @@ Interestingly, permanganate which is relatively highly coloured when compared to
 
 \begin{longtable}[]{@{}lll@{}}
 \caption{\label{tab:extcoeff} The molar extinction coefficients of a range of molecules, the magnitude is strongly dependent upon the adherence to selection rules, the two organic molecules, DNA bases \& TOTO-1 are both `spin allowed', permanganate is a LMCT which has no selection rules, whereas the final three molecules all fall foul of the Laporte selection rule which states \(\Delta l = \pm 1\). Since these transitions are `forbidden' the molar extinction coefficient is considerably lower than the allowed transitions.}\tabularnewline
-\toprule
+\toprule()
 & \(\lambda\)\textsubscript{max} / nm & \(\varepsilon _{\lambda}\) / M\textsuperscript{-1} cm\textsuperscript{-1} \\
-\midrule
+\midrule()
 \endfirsthead
-\toprule
+\toprule()
 & \(\lambda\)\textsubscript{max} / nm & \(\varepsilon _{\lambda}\) / M\textsuperscript{-1} cm\textsuperscript{-1} \\
-\midrule
+\midrule()
 \endhead
 DNA (per base) & 260 & 6600 \\
 TOTO-1 & 514 & 117000 \\
@@ -627,7 +627,7 @@ KMnO\textsubscript{4} & 520 & 1800 \\
 CuSO\textsubscript{4} & 810 & 20 \\
 {[}Ti(H\textsubscript{2}O)\textsubscript{6}{]}\textsuperscript{3+} & 500 & 6.1 \\
 PrCl\textsubscript{3} & 445 & 0.07 \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 The weak absorption carries on for the lanthanide complexes where \(f-f\) transitions are again forbidden by the Laporte selection rule. However, Ce\textsuperscript{3+} and Tb\textsuperscript{3+} have more intense electronic absorption bands which appear in the UV.
@@ -876,17 +876,17 @@ Table \ref{tab:phototrans} the deactivation pathways from excited states:
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2857}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2857}}@{}}
 \caption{\label{tab:phototrans} The excitation and decay pathways in molecules.}\tabularnewline
-\toprule
+\toprule()
 \endhead
 \emph{`Allowed transitions'} & & \\
 Singlet-singlet absorption Singlet-singlet emission & fluorescence & \(S_0 + h \nu \longrightarrow S_1\) \(S_1 \longrightarrow S_0 + h \nu '\) \\
 \emph{`Forbidden transitions'} & & \\
-Singlet-triplet absorption Triplet-singlet emission & fluorescence & \(S_0 + h \nu \longrightarrow T_1\) \(T_1 \longrightarrow S_0 + h \nu ''\) \\
+Singlet-triplet absorption Triplet-singlet emission & phosphorescence & \(S_0 + h \nu \longrightarrow T_1\) \(T_1 \longrightarrow S_0 + h \nu ''\) \\
 \emph{`Other transitions'} & & \\
 Internal conversion & (vibrational relaxation) (vibrational relaxation) & \(S_1 \longrightarrow S_0 + heat\) \(S_1 \longrightarrow T_1 + heat\) \(T_1 \longrightarrow S_0 + heat\) \\
 \emph{Other pathways} & & \\
 Quenching of excited state Chemistry from excited state & & \(S_1 + Q \longrightarrow S_0 + Q +heat\) \(S_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(T_1 + Q \longrightarrow S_0 + Q +heat\) \(T_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(S_1 \longrightarrow\) new/changed molecule \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 The spin selection rule has important consequences on the lifetime of singlet and triplet states. The spin allowed process of fluorescence usually has a short lifetime (less than 10 ns), whereas the spin forbidden process of phosphorescence has a significantly longer lifetime, which can be as long as several seconds.
@@ -987,7 +987,7 @@ If there is more than one possible deactivation pathway from the excited state i
   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1778}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1778}}@{}}
 \caption{\label{tab:QYtab} The deactivation pathways of an excited state, with the associated rate constants and quantum yields.}\tabularnewline
-\toprule
+\toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -995,9 +995,9 @@ Rate of Process
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Quantum Yield
 \end{minipage} \\
-\midrule
+\midrule()
 \endfirsthead
-\toprule
+\toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1005,7 +1005,7 @@ Rate of Process
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Quantum Yield
 \end{minipage} \\
-\midrule
+\midrule()
 \endhead
 Absorption & \(S_0 + h \nu \longrightarrow S_1\) & \(I\) & \\
 Fluorescence & \(S_1 \longrightarrow S_0 + h \nu'\) & \(k_f[S_1]\) & \(\phi _f\) \\
@@ -1013,7 +1013,7 @@ Internal conversion & \(S_1 \longrightarrow S_0 + \textrm{heat}\) & \(k_{ic}[S_1
 Intersystem crossing \emph{singlet to triplet} & \(S_1 \longrightarrow T_1 + \textrm{heat}\) & \(k_{ST}[S_1]\) & \(\phi _{ST}\) \\
 Phosphorescence & \(T_1 \longrightarrow S_0 + h \nu''\) & \(k_p[T_1]\) & \(\phi _p\) \\
 Intersystem crossing \emph{internal conversion triplet to singlet} & \(T_1 \longrightarrow S_0 + \textrm{heat}\) & \(k_{TS}[T_1]\) & \(\phi _{TS}\) \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 According to the Stark-Einstein law the total quantum yield of all processes is unity (one), however if secondary reactions occur (such as radical propagation) it may be more than 1. The quantum yield and rate of a process are intrinsically linked. It should be implicit that the faster the rate of a process (the bigger the rate constant) the bigger the quantum yield of that process; in fact the quantum yield of a process, such as fluorescence, is the rate of fluorescence divided by the sum of the rates of all of the deactivation processes (equation \eqref{eq:QYfluor}).
@@ -1056,19 +1056,19 @@ The integrated emission intensity, \(\int{I}\textrm{d}\bar \nu\), of the unknown
 
 \begin{longtable}[]{@{}lllll@{}}
 \caption{\label{tab:actinometer} The photophysical details of well characterised actinometers.}\tabularnewline
-\toprule
+\toprule()
 Reference & Solvent & λ\textsubscript{ex}/nm & Φ\textsubscript{em} & λ\textsubscript{em,max} / nm \\
-\midrule
+\midrule()
 \endfirsthead
-\toprule
+\toprule()
 Reference & Solvent & λ\textsubscript{ex}/nm & Φ\textsubscript{em} & λ\textsubscript{em,max} / nm \\
-\midrule
+\midrule()
 \endhead
 quinine sulfate & 0.1 M H\textsubscript{2}SO\textsubscript{4} & 350 & 0.577 & 444 \\
 fluorescein & 0.1 M H\textsubscript{2}SO\textsubscript{4} & 496 & 0.95 & 521 \\
 rhodamine 6G & ethanol & 488 & 0.94 & 530 \\
 cresyl violet & methanol & 540 & 0.54 & 622 \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{fluorescence-lifetime}{%
@@ -1107,18 +1107,18 @@ Non radiative decay become increasingly unfavourable as the energy gaps become b
 
 \begin{longtable}[]{@{}llllll@{}}
 \caption{\label{tab:actinometer} The lifetime of the excited state increases dramatically as the energy gap between the ground and excited state increases due to a decrease in internal conversion. The quantum yield of emission increases as the rate constant for internal conversion decreases..}\tabularnewline
-\toprule
+\toprule()
 & λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ nw & Φ\textsubscript{em} \\
-\midrule
+\midrule()
 \endfirsthead
-\toprule
+\toprule()
 & λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ nw & Φ\textsubscript{em} \\
-\midrule
+\midrule()
 \endhead
 {[}Os(phen)\textsubscript{3}{]}\textsuperscript{2+} & 650 & 720 & 0.186 & 260 & 0.016 \\
 {[}Os(phen)\textsubscript{2}(dppene){]}\textsuperscript{2+} & 455 & 609 & 0.69 & 1830 & 0.138 \\
 {[}Os(phen)(dppene)\textsubscript{2}{]}\textsuperscript{2+} & 400 & 530 & 0.761 & 3600 & 0.518 \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 The rate of non-radiative decay also depends upon the vibrations within a molecule (this should be logical since the energy is lost as heat), as well as the size of any structural changes required upon deactivation of the excited state. Since the frequency of vibrations is a factor in the rate of non-radiative decay there are clear isotope effects; particularly when hydrogens are replaced with deuteriums. C-H stretches occur with a frequency around 3000 cm\textsuperscript{−1}, whereas this is much lower at around 2200 cm\textsuperscript{−1} for C-D stretches; because of this the efficiency of vibrational relaxation in the hydrogen sample is considerably greater and the lifetime of the excited state is consequently longer in the deuterated sample.
@@ -1130,20 +1130,20 @@ For intersystem crossing the efficiency is again determined by the size of the e
 El Sayed's rule states:
 
 \begin{quote}
-the rate of intersystem crossing is relatively large if the radiationless transition involves a change in the orbital type.*
+\emph{the rate of intersystem crossing is relatively large if the radiationless transition involves a change in the orbital type.}
 \end{quote}
 
 Consequently intersystem crossing is considerably more efficient in molecules where there are hetero atoms as can be seen when comparing the rates of singlet triplet intersystem crossing between anthracene and 9-acetoanthracene, figure \ref{tab:rateST}. However, the presence of a hetero atom does not guarantee a high rate of intersystem crossing, for systems where there is no change in orbital type there rate constants are in the order of 100 to 1000 times more slow than those with a change in orbital type.
 
 \begin{longtable}[]{@{}llll@{}}
 \caption{\label{tab:rateST} The rates of intersystem crossing for a range of organic chromophores illustrating El Sayed's rule. When orbitals are listed as (for example) π,π* then it is looking at the pair of electrons in the highest orbitals (the valence HOMO electrons in the ground state), upon excitation an electron is excited from the π to the π* orbital.}\tabularnewline
-\toprule
+\toprule()
 & transition & transition type & k\textsubscript{ST} / s\textsuperscript{−1} \\
-\midrule
+\midrule()
 \endfirsthead
-\toprule
+\toprule()
 & transition & transition type & k\textsubscript{ST} / s\textsuperscript{−1} \\
-\midrule
+\midrule()
 \endhead
 anthracene & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (π,π*) & forbidden & 1.4 × 10\textsuperscript{8} \\
 acetone & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 5 × 10\textsuperscript{8} \\
@@ -1151,7 +1151,7 @@ benzil & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden &
 biacetyl & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 7 × 10\textsuperscript{7} \\
 9-acetoanthracence & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (n,π*) & allowed & \textasciitilde10\textsuperscript{10} \\
 benzophenone & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (n,π*) & allowed & \textasciitilde10\textsuperscript{11} \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{sec:beforeem}{%
@@ -1179,16 +1179,16 @@ To support the material in this section it is suggested you read chapters 3 \& 4
 \end{enumerate}
 
 \begin{longtable}[]{@{}lll@{}}
-\toprule
+\toprule()
 Compound & k\textsubscript{p} / s\textsuperscript{−1} & k\textsubscript{ST} / s\textsuperscript{−1} \\
-\midrule
+\midrule()
 \endhead
 naphthalene & 0.05 & 0.39 \\
 1-fluoronaphthalene & 0.23 & 0.42 \\
 1-chloronaphthalene & 1.10 & 2.35 \\
 1-bromonaphthalene & 13.5 & 36.5 \\
 1-iodonaphthalene & 190 & 310 \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \begin{enumerate}
@@ -1300,11 +1300,11 @@ Table \ref{tab:phototrans}, part of which is repeated below, details all of the 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}@{}}
-\toprule
+\toprule()
 \endhead
 \emph{Other pathways} & \\
 Quenching of excited state & \(S_1 + Q \longrightarrow S_0 + Q +heat\) \(S_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(T_1 + Q \longrightarrow S_0 + Q +heat\) \(T_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 Quenching of the excited state competes with emission from the excited state, consequently reducing the quantum yield of fluorescence (or phosphorescence).
@@ -1993,18 +1993,18 @@ The assymetric cyanine dye YO-Pro-1 has been shown to fluoresce when bound to DN
 
 \begin{longtable}[]{@{}llll@{}}
 \caption{\label{tab:YOquench} The normalised fluorescence intensity at λ\_max\_ and the lifetimes and normlised lifetimes for YO-Pro-1 when bound to a 15-mer oligonucleotide containing a varying number of modified lesions. The concentration of YO-Pro-1 was such that statistically there was no more than one dye bound per oligonucleotide.}\tabularnewline
-\toprule
+\toprule()
 & Normalised Fluorescence & \(\tau\) / ns & \(\tau / \tau_0\) \\
-\midrule
+\midrule()
 \endfirsthead
-\toprule
+\toprule()
 & Normalised Fluorescence & \(\tau\) / ns & \(\tau / \tau_0\) \\
-\midrule
+\midrule()
 \endhead
 no modified bases & 1 & 2.80 & 1 \\
 1 8-oxo-G & 0.558 & 2.38 & 0.85 \\
 4 8-oxo-G & 0.169 & 1.31 & 0.47 \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 You will recall that in Section @ref(\{sec:ratesphoto\}) the lifetime and quantum yield of a process were introduce, and it was stated that the ratios of both the lifetime and fluorescence intensity of the quenched to unquenched systems should be the same, however it is clear from the values in Table @ref\{tab:YOquench\} that this is not the case.
